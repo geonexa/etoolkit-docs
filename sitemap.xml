@@ -5,79 +5,23 @@
          <lastmod>2026-02-16</lastmod>
     </url>
     <url>
+         <loc>https://etoolkit.terrawatch.net/deployment/</loc>
+         <lastmod>2026-02-16</lastmod>
+    </url>
+    <url>
+         <loc>https://etoolkit.terrawatch.net/installation/</loc>
+         <lastmod>2026-02-16</lastmod>
+    </url>
+    <url>
+         <loc>https://etoolkit.terrawatch.net/technology-and-workflow/</loc>
+         <lastmod>2026-02-16</lastmod>
+    </url>
+    <url>
          <loc>https://etoolkit.terrawatch.net/administration/admin-panel/</loc>
          <lastmod>2026-02-16</lastmod>
     </url>
     <url>
-         <loc>https://etoolkit.terrawatch.net/administration/bulk-upload/</loc>
-         <lastmod>2026-02-16</lastmod>
-    </url>
-    <url>
          <loc>https://etoolkit.terrawatch.net/administration/geoserver/</loc>
-         <lastmod>2026-02-16</lastmod>
-    </url>
-    <url>
-         <loc>https://etoolkit.terrawatch.net/api/authentication/</loc>
-         <lastmod>2026-02-16</lastmod>
-    </url>
-    <url>
-         <loc>https://etoolkit.terrawatch.net/api/endpoints/</loc>
-         <lastmod>2026-02-16</lastmod>
-    </url>
-    <url>
-         <loc>https://etoolkit.terrawatch.net/api/overview/</loc>
-         <lastmod>2026-02-16</lastmod>
-    </url>
-    <url>
-         <loc>https://etoolkit.terrawatch.net/deployment/apache/</loc>
-         <lastmod>2026-02-16</lastmod>
-    </url>
-    <url>
-         <loc>https://etoolkit.terrawatch.net/deployment/celery/</loc>
-         <lastmod>2026-02-16</lastmod>
-    </url>
-    <url>
-         <loc>https://etoolkit.terrawatch.net/deployment/overview/</loc>
-         <lastmod>2026-02-16</lastmod>
-    </url>
-    <url>
-         <loc>https://etoolkit.terrawatch.net/deployment/ssl/</loc>
-         <lastmod>2026-02-16</lastmod>
-    </url>
-    <url>
-         <loc>https://etoolkit.terrawatch.net/deployment/uwsgi/</loc>
-         <lastmod>2026-02-16</lastmod>
-    </url>
-    <url>
-         <loc>https://etoolkit.terrawatch.net/features/analysis-types/</loc>
-         <lastmod>2026-02-16</lastmod>
-    </url>
-    <url>
-         <loc>https://etoolkit.terrawatch.net/features/custom-apps/</loc>
-         <lastmod>2026-02-16</lastmod>
-    </url>
-    <url>
-         <loc>https://etoolkit.terrawatch.net/features/data-catalog/</loc>
-         <lastmod>2026-02-16</lastmod>
-    </url>
-    <url>
-         <loc>https://etoolkit.terrawatch.net/features/geoserver/</loc>
-         <lastmod>2026-02-16</lastmod>
-    </url>
-    <url>
-         <loc>https://etoolkit.terrawatch.net/features/google-earth-engine/</loc>
-         <lastmod>2026-02-16</lastmod>
-    </url>
-    <url>
-         <loc>https://etoolkit.terrawatch.net/getting-started/configuration/</loc>
-         <lastmod>2026-02-16</lastmod>
-    </url>
-    <url>
-         <loc>https://etoolkit.terrawatch.net/getting-started/first-steps/</loc>
-         <lastmod>2026-02-16</lastmod>
-    </url>
-    <url>
-         <loc>https://etoolkit.terrawatch.net/getting-started/installation/</loc>
          <lastmod>2026-02-16</lastmod>
     </url>
     <url>
@@ -86,34 +30,6 @@
     </url>
     <url>
          <loc>https://etoolkit.terrawatch.net/troubleshooting/errors/</loc>
-         <lastmod>2026-02-16</lastmod>
-    </url>
-    <url>
-         <loc>https://etoolkit.terrawatch.net/troubleshooting/performance/</loc>
-         <lastmod>2026-02-16</lastmod>
-    </url>
-    <url>
-         <loc>https://etoolkit.terrawatch.net/user-guide/analysis-tools/</loc>
-         <lastmod>2026-02-16</lastmod>
-    </url>
-    <url>
-         <loc>https://etoolkit.terrawatch.net/user-guide/area-management/</loc>
-         <lastmod>2026-02-16</lastmod>
-    </url>
-    <url>
-         <loc>https://etoolkit.terrawatch.net/user-guide/authentication/</loc>
-         <lastmod>2026-02-16</lastmod>
-    </url>
-    <url>
-         <loc>https://etoolkit.terrawatch.net/user-guide/data-catalog/</loc>
-         <lastmod>2026-02-16</lastmod>
-    </url>
-    <url>
-         <loc>https://etoolkit.terrawatch.net/user-guide/overview/</loc>
-         <lastmod>2026-02-16</lastmod>
-    </url>
-    <url>
-         <loc>https://etoolkit.terrawatch.net/user-guide/reports/</loc>
          <lastmod>2026-02-16</lastmod>
     </url>
 </urlset>
