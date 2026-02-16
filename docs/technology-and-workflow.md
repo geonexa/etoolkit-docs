@@ -44,10 +44,9 @@ The platform is designed to make the discovery, understanding, and application o
 
 - The server receives the query parameters and processes them against the pre-curated catalog of datasets, training materials, and case studies.
 - Filtering logic is applied to return only relevant records based on user selections.
-- Pagination is handled to efficiently serve large datasets, and available filter options are updated dynamically.
 
 ### 3. Results and Visualization
 
-- Filtered results are returned and displayed as interactive cards with links, thumbnails, and descriptions.
+- Filtered results are returned and displayed
 - For selected datasets, users can explore spatial layers on an embedded map with legends and basemap controls.
 - Data can also be further analyzed, visualized, or downloaded depending on its type and availability (e.g. raster layers, time series, EO maps).

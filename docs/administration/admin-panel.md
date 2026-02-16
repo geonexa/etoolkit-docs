@@ -95,14 +95,6 @@ Monitor Celery tasks:
 3. Click task to view details
 4. Check status and results
 
-## Best Practices
-
-1. **Regular Backups**: Backup database regularly
-2. **User Management**: Review users periodically
-3. **Data Validation**: Validate uploaded data
-4. **Monitor Tasks**: Check task status regularly
-5. **Logs**: Review logs for errors
-6. **Security**: Keep admin credentials secure
 
 ## Permissions
 
@@ -143,4 +135,3 @@ No admin panel access.
 
 ---
 
-Next: [GeoServer Management](geoserver.md)

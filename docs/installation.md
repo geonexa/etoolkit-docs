@@ -187,14 +187,21 @@ python manage.py createsuperuser --username admin
 
 Set email and password when prompted.
 
-## Step 9: Verify Installation
+## Step 9: Testing (Development Mode)
 
 Start Celery (in a separate terminal) and the Django server:
 
 ```bash
+* Start celery worker to use asynchronous requests
 celery -A etoolkit worker -l INFO
-python manage.py runserver
-# Or: python manage.py runserver 127.0.0.1:8002
+
+* At this point you could run the app
+python3 manage.py runserver
+
+* run this to access on other device too
+python manage.py runserver 0.0.0.0:8002
+
+
 ```
 
 Open in a browser:

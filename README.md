@@ -1,5 +1,5 @@
 # EO-Toolkit Documentation
-This directory contains the complete documentation for EO-Toolkit, built with MkDocs.
+This directory contains the complete documentation for EO-Toolkit.
 
 ## Quick Start
 

@@ -42,14 +42,6 @@ sudo chmod -R 755 /path/to/etoolkit
 sudo chown -R www-data:www-data /path/to/etoolkit/media
 ```
 
-### Missing SECRET_KEY
-
-**Problem**: Application fails to start with an error about SECRET_KEY.
-
-**Solutions**:
-
-- Add `SECRET_KEY` to your `.env` file
-- Generate a value: `python -c "from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())"`
 
 ---
 
@@ -85,18 +77,6 @@ sudo chown -R www-data:www-data /path/to/etoolkit/media
 
 - Verify GeoServer is running
 - Check GEOSERVER_URL, GEOSERVER_USER, and GEOSERVER_PASSWORD in `.env`
-- Test connection: `curl -u $GEOSERVER_USER:$GEOSERVER_PASSWORD http://localhost:8080/geoserver/rest/workspaces.json` (use credentials from your `.env`)
-
-### Celery tasks not processing
-
-**Problem**: Tasks are queued but never run (e.g. report generation).
-
-**Solutions**:
-
-- Check Celery workers are running: `sudo systemctl status etoolkit_celery` (or your service name)
-- Verify Redis is running: `redis-cli ping` (should return PONG)
-- Check Celery logs: `tail -f /path/to/etoolkit/log/celery/worker1.log`
-- Restart Celery: `sudo systemctl restart etoolkit_celery`
 
 ---
 
@@ -125,57 +105,6 @@ sudo chown -R www-data:www-data /path/to/etoolkit/media
 - Check application or mail server logs
 - Confirm the email address is correct and try resending OTP
 
-### Area upload fails
-
-**Problem**: GeoJSON upload for an area fails.
-
-**Solutions**:
-
-- Ensure the file is valid GeoJSON
-- Use only Polygon or MultiPolygon geometry types
-- Use EPSG:4326 (WGS84) or ensure the file can be converted
-- Check file size limits
-- Verify the file is not corrupted
-
----
-
-## Performance Issues
-
-### Slow page loads
-
-**Problem**: Pages take a long time to load.
-
-**Solutions**:
-
-- Check server resources (CPU, memory, disk)
-- Optimize database queries and add indexes if needed
-- Enable caching where appropriate
-- Verify network and reverse proxy configuration
-- Review application and web server logs for slow requests
-
-### Analysis takes too long
-
-**Problem**: Analyses run for a very long time or time out.
-
-**Solutions**:
-
-- Reduce the area size
-- Limit the temporal range (e.g. fewer years)
-- Check Google Earth Engine quota or service status
-- Verify server and Celery worker resources
-- Avoid running too many heavy analyses at once
-
-### High memory usage
-
-**Problem**: Server runs out of memory.
-
-**Solutions**:
-
-- Reduce uWSGI worker processes or threads
-- Reduce Celery concurrency
-- Optimize GeoServer or application settings
-- Add swap if appropriate
-- Consider scaling to more memory or more nodes
 
 ---
 
@@ -202,42 +131,3 @@ sudo chown -R www-data:www-data /path/to/etoolkit/media
 - Check error log: `sudo tail -f /var/log/apache2/error.log`
 - Ensure required modules are enabled: `sudo a2enmod uwsgi ssl`
 - Verify virtual host and paths in the site configuration
-
-### SSL certificate issues
-
-**Problem**: HTTPS fails or browser reports certificate errors.
-
-**Solutions**:
-
-- Verify certificate file paths in Apache configuration
-- Check certificate validity and expiration
-- Ensure the SSL module is enabled and Apache reloaded
-- For Let's Encrypt, run `sudo certbot renew --dry-run` to test renewal
-
----
-
-## Data and Analysis Issues
-
-### Dataset not loading on map
-
-**Problem**: A dataset or layer does not appear on the map.
-
-**Solutions**:
-
-- Confirm the dataset exists and is published in GeoServer (for GeoServer layers)
-- Test the WMS URL or layer in a separate client if possible
-- Verify the area of interest is within the data coverage
-- Check the browser console and network tab for failed requests
-
-### Analysis returns no data
-
-**Problem**: Analysis completes but shows no data or empty charts.
-
-**Solutions**:
-
-- Ensure the selected area is within the dataset coverage
-- Check that the date range is valid for the dataset
-- Verify the area geometry is valid
-- Try a different area or dataset to isolate the issue
-
----

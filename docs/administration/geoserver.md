@@ -115,22 +115,33 @@ GEOSERVER_PASSWORD = 'your_password'
 - Test WMS URL directly
 - Check layer visibility
 
-### Performance Issues
+## Bulk geoserver data upload
+```
+  1. first All data files must be organized under:
+  /media/geoserver_data/<folder_name>/
+  Each dataset should have:
+  - GeoTIFF or Shapefile ZIP
+  - .sld file for styling
+  - Thumbnail image 
 
-- Optimize raster files
-- Use appropriate resolution
-- Consider tiling
-- Check GeoServer config
+  media/geoserver_data/Niger_LULC/
+  ├── Niger_LULC.tif
+  ├── Niger_LULC.sld
+  ├── Niger_LULC.png
 
-## Best Practices
+  2. Place the bulk metadata JSON at:
+  /staticData/geoserver_data.json
 
-1. **Organize Files**: Keep files organized
-2. **Naming**: Use descriptive names
-3. **Metadata**: Provide complete metadata
-4. **Styles**: Create appropriate SLD files
-5. **Testing**: Test layers after upload
-6. **Backup**: Backup GeoServer configuration
+  3. What the Script Does
+  - Loads and parses geoserver_data.json
 
----
+  - For each entry:
+    - Checks if a dataset with the same name already exists
+    - Validates file paths
+    - Saves a new GeoDataUpload model instance
+    - Uploads the data and style to GeoServer
 
-Next: [Bulk Data Upload](bulk-upload.md)
+  4. Triggering Upload
+  - Go to Geo Data Upload in Django Admin
+  - Click the top-right button: “Trigger Bulk Upload”
+```
