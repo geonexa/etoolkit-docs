@@ -3,10 +3,6 @@ site_description: Comprehensive documentation for the Earth Observation Toolkit 
 site_author: EO-Toolkit Team
 site_url: https://etoolkit.terrawatch.net/
 
-repo_name: eToolkit
-# repo_url: https://github.com/yourusername/eToolkit
-# edit_uri: edit/main/docs/docs/
-
 theme:
   name: material
   palette:
@@ -23,10 +19,10 @@ theme:
         icon: material/brightness-4
         name: Switch to light mode
   features:
-    - navigation.tabs
-    - navigation.sections
-    - navigation.expand
+    - navigation.instant
+    - navigation.tracking
     - navigation.top
+
     - search.suggest
     - search.highlight
     - content.code.annotate
@@ -57,39 +53,14 @@ plugins:
       enable_creation_date: true
 
 nav:
-  - Home: index.md
-  - Getting Started:
-    - Installation: getting-started/installation.md
-    - Configuration: getting-started/configuration.md
-    - First Steps: getting-started/first-steps.md
-  - User Guide:
-    - Overview: user-guide/overview.md
-    - Authentication: user-guide/authentication.md
-    - Data Catalog: user-guide/data-catalog.md
-    - Area Management: user-guide/area-management.md
-    - Analysis Tools: user-guide/analysis-tools.md
-    - Reports: user-guide/reports.md
-  - Features:
-    - Data Catalog: features/data-catalog.md
-    - GeoServer Integration: features/geoserver.md
-    - Google Earth Engine: features/google-earth-engine.md
-    - Analysis Types: features/analysis-types.md
-    - Custom Apps: features/custom-apps.md
-  - API Reference:
-    - Overview: api/overview.md
-    - Endpoints: api/endpoints.md
-    - Authentication: api/authentication.md
+  - Introduction: index.md
+  - Technology and Workflow: technology-and-workflow.md
+  - Installation Guide: installation.md
+  - Deployment: deployment.md
   - Administration:
     - Admin Panel: administration/admin-panel.md
     - GeoServer Management: administration/geoserver.md
-    - Bulk Data Upload: administration/bulk-upload.md
-  - Deployment:
-    - Overview: deployment/overview.md
-    - Apache Setup: deployment/apache.md
-    - Celery Setup: deployment/celery.md
-    - uWSGI Setup: deployment/uwsgi.md
-    - SSL Configuration: deployment/ssl.md
+  
   - Troubleshooting:
     - Common Issues: troubleshooting/common-issues.md
     - Error Messages: troubleshooting/errors.md
-    - Performance: troubleshooting/performance.md

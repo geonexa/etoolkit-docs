@@ -1,227 +1,243 @@
 # Common Issues and Solutions
 
-This guide covers common issues encountered when using EO-Toolkit and their solutions.
+This guide covers common issues when installing, running, or using EO-Toolkit and how to resolve them.
 
 ## Installation Issues
 
-### Database Connection Failed
+### Database connection failed
 
-**Problem**: Cannot connect to PostgreSQL database
+**Problem**: Cannot connect to PostgreSQL database.
 
 **Solutions**:
+
 - Verify PostgreSQL is running: `sudo systemctl status postgresql`
-- Check database credentials in settings
-- Verify database exists: `psql -U etoolkit -l`
+- Check database credentials in `.env` (POSTGRES_DB, POSTGRES_USER, POSTGRES_PASSWORD, POSTGRES_HOST, POSTGRES_PORT)
+- Confirm the database exists: `psql -U etoolkit -l`
 - Check PostgreSQL is listening: `sudo netstat -tlnp | grep 5432`
 
-### GDAL Installation Issues
+### GDAL installation issues
 
-**Problem**: GDAL-related errors
-
-**Solutions**:
-- Verify GDAL installed: `gdalinfo --version`
-- Install GDAL development packages: `sudo apt-get install gdal-bin libgdal-dev`
-- Rebuild Python GDAL bindings if needed
-
-### Permission Errors
-
-**Problem**: Permission denied errors
+**Problem**: GDAL-related errors during setup or when loading spatial data.
 
 **Solutions**:
+
+- Verify GDAL is installed: `gdalinfo --version`
+- Install development packages: `sudo apt-get install gdal-bin libgdal-dev`
+- Reinstall Python GDAL bindings inside your virtualenv if needed
+
+### Permission errors
+
+**Problem**: Permission denied when running commands or when the web server accesses files.
+
+**Solutions**:
+
 ```bash
-# Fix ownership
-sudo chown -R user:user /path/to/etoolkit
+# Fix ownership (replace with your deploy user if different)
+sudo chown -R www-data:www-data /path/to/etoolkit
 
 # Fix permissions
 sudo chmod -R 755 /path/to/etoolkit
 
-# For media directory
+# Media directory
 sudo chown -R www-data:www-data /path/to/etoolkit/media
 ```
 
-## Runtime Issues
+### Missing SECRET_KEY
 
-### Static Files Not Loading
-
-**Problem**: CSS/JS files not loading
+**Problem**: Application fails to start with an error about SECRET_KEY.
 
 **Solutions**:
-- Collect static files: `python manage.py collectstatic`
-- Check STATIC_ROOT and STATIC_URL settings
-- Verify Apache/Apache configuration
-- Check file permissions
 
-### Media Files Not Accessible
-
-**Problem**: Uploaded files not accessible
-
-**Solutions**:
-- Check MEDIA_ROOT and MEDIA_URL settings
-- Verify media directory exists and has permissions
-- Check Apache configuration for media alias
-- Verify file permissions
-
-### GeoServer Connection Failed
-
-**Problem**: Cannot connect to GeoServer
-
-**Solutions**:
-- Verify GeoServer is running
-- Check GeoServer URL in settings
-- Verify credentials
-- Test connection: `curl -u user:pass http://geoserver:8080/geoserver/rest/workspaces.json`
-
-### Celery Tasks Not Processing
-
-**Problem**: Tasks queued but not executing
-
-**Solutions**:
-- Check Celery workers running: `sudo systemctl status etoolkit_celery`
-- Verify Redis connection: `redis-cli ping`
-- Check Celery logs: `tail -f /path/to/log/celery/worker1.log`
-- Restart Celery: `sudo systemctl restart etoolkit_celery`
-
-## User Issues
-
-### Cannot Log In
-
-**Problem**: Login fails
-
-**Solutions**:
-- Verify credentials
-- Check account is active
-- Verify email is verified
-- Check for account lockout
-- Clear browser cookies
-
-### Email Verification Not Working
-
-**Problem**: OTP email not received
-
-**Solutions**:
-- Check spam folder
-- Verify email configuration
-- Check email server logs
-- Verify email address
-- Try resending OTP
-
-### Area Upload Fails
-
-**Problem**: GeoJSON upload fails
-
-**Solutions**:
-- Verify file format (valid GeoJSON)
-- Check geometry type (Polygon/MultiPolygon)
-- Ensure EPSG:4326 coordinate system
-- Check file size limits
-- Verify file is not corrupted
-
-## Performance Issues
-
-### Slow Page Loads
-
-**Problem**: Pages load slowly
-
-**Solutions**:
-- Check server resources (CPU, memory)
-- Optimize database queries
-- Enable caching
-- Check network connectivity
-- Review Apache/uWSGI configuration
-
-### Analysis Takes Too Long
-
-**Problem**: Analyses run very slowly
-
-**Solutions**:
-- Reduce area size
-- Limit temporal range
-- Check GEE quota limits
-- Verify server resources
-- Check for concurrent analyses
-
-### High Memory Usage
-
-**Problem**: Server running out of memory
-
-**Solutions**:
-- Reduce uWSGI workers
-- Reduce Celery concurrency
-- Optimize GeoServer configuration
-- Add swap space
-- Consider server upgrade
-
-## Deployment Issues
-
-### uWSGI Not Starting
-
-**Problem**: uWSGI service fails to start
-
-**Solutions**:
-- Check configuration file paths
-- Verify virtual environment path
-- Check log files for errors
-- Verify user permissions
-- Check socket file permissions
-
-### Apache Configuration Errors
-
-**Problem**: Apache won't start or serve site
-
-**Solutions**:
-- Test configuration: `sudo apachectl configtest`
-- Check error logs: `sudo tail -f /var/log/apache2/error.log`
-- Verify modules enabled: `sudo a2enmod uwsgi ssl`
-- Check virtual host configuration
-
-### SSL Certificate Issues
-
-**Problem**: SSL certificate errors
-
-**Solutions**:
-- Verify certificate paths
-- Check certificate validity
-- Renew expired certificates
-- Verify certificate chain
-- Check Apache SSL configuration
-
-## Data Issues
-
-### Dataset Not Loading
-
-**Problem**: Dataset fails to load on map
-
-**Solutions**:
-- Verify dataset exists
-- Check GeoServer layer published
-- Test WMS URL directly
-- Verify area within data coverage
-- Check browser console for errors
-
-### Analysis Returns No Data
-
-**Problem**: Analysis completes but shows no data
-
-**Solutions**:
-- Verify area within data coverage
-- Check date range validity
-- Ensure area geometry is valid
-- Try different area
-- Check data availability for region
-
-## Getting Help
-
-If issues persist:
-
-1. Check logs for detailed error messages
-2. Review relevant documentation sections
-3. Search for similar issues
-4. Contact support with:
-   - Error messages
-   - Steps to reproduce
-   - System information
-   - Relevant log excerpts
+- Add `SECRET_KEY` to your `.env` file
+- Generate a value: `python -c "from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())"`
 
 ---
 
-Next: [Error Messages](errors.md)
+## Runtime Issues
+
+### Static files not loading
+
+**Problem**: CSS or JavaScript files do not load; pages look unstyled.
+
+**Solutions**:
+
+- Collect static files: `python manage.py collectstatic --noinput`
+- Check STATIC_ROOT and STATIC_URL in settings
+- Verify Apache (or your web server) is configured to serve the static directory
+- Check file permissions on the static root directory
+
+### Media files not accessible
+
+**Problem**: Uploaded files or thumbnails return 404 or permission errors.
+
+**Solutions**:
+
+- Confirm MEDIA_ROOT and MEDIA_URL in settings
+- Ensure the media directory exists and has correct permissions
+- Check web server configuration for the media alias or path
+- In development, ensure `DEBUG=True` and static/media URLs are included in urlpatterns if needed
+
+### GeoServer connection failed
+
+**Problem**: Cannot connect to GeoServer or layers do not load.
+
+**Solutions**:
+
+- Verify GeoServer is running
+- Check GEOSERVER_URL, GEOSERVER_USER, and GEOSERVER_PASSWORD in `.env`
+- Test connection: `curl -u $GEOSERVER_USER:$GEOSERVER_PASSWORD http://localhost:8080/geoserver/rest/workspaces.json` (use credentials from your `.env`)
+
+### Celery tasks not processing
+
+**Problem**: Tasks are queued but never run (e.g. report generation).
+
+**Solutions**:
+
+- Check Celery workers are running: `sudo systemctl status etoolkit_celery` (or your service name)
+- Verify Redis is running: `redis-cli ping` (should return PONG)
+- Check Celery logs: `tail -f /path/to/etoolkit/log/celery/worker1.log`
+- Restart Celery: `sudo systemctl restart etoolkit_celery`
+
+---
+
+## User and Application Issues
+
+### Cannot log in
+
+**Problem**: Login fails with invalid credentials or similar.
+
+**Solutions**:
+
+- Verify username and password
+- Ensure the account is active (email verification completed)
+- Check for account lockout or rate limiting
+- Clear browser cookies and try again
+- Use password reset if needed
+
+### Email verification not working
+
+**Problem**: OTP email not received after registration.
+
+**Solutions**:
+
+- Check spam or junk folder
+- Verify email configuration in `.env` (EMAIL_HOST_USER, EMAIL_HOST_PASSWORD, etc.)
+- Check application or mail server logs
+- Confirm the email address is correct and try resending OTP
+
+### Area upload fails
+
+**Problem**: GeoJSON upload for an area fails.
+
+**Solutions**:
+
+- Ensure the file is valid GeoJSON
+- Use only Polygon or MultiPolygon geometry types
+- Use EPSG:4326 (WGS84) or ensure the file can be converted
+- Check file size limits
+- Verify the file is not corrupted
+
+---
+
+## Performance Issues
+
+### Slow page loads
+
+**Problem**: Pages take a long time to load.
+
+**Solutions**:
+
+- Check server resources (CPU, memory, disk)
+- Optimize database queries and add indexes if needed
+- Enable caching where appropriate
+- Verify network and reverse proxy configuration
+- Review application and web server logs for slow requests
+
+### Analysis takes too long
+
+**Problem**: Analyses run for a very long time or time out.
+
+**Solutions**:
+
+- Reduce the area size
+- Limit the temporal range (e.g. fewer years)
+- Check Google Earth Engine quota or service status
+- Verify server and Celery worker resources
+- Avoid running too many heavy analyses at once
+
+### High memory usage
+
+**Problem**: Server runs out of memory.
+
+**Solutions**:
+
+- Reduce uWSGI worker processes or threads
+- Reduce Celery concurrency
+- Optimize GeoServer or application settings
+- Add swap if appropriate
+- Consider scaling to more memory or more nodes
+
+---
+
+## Deployment Issues
+
+### uWSGI not starting
+
+**Problem**: uWSGI service fails to start.
+
+**Solutions**:
+
+- Check paths in the uWSGI INI file and systemd unit
+- Verify virtual environment path and that `wsgi.py` exists
+- Check log file for the exact error
+- Ensure the run user (e.g. www-data) has permission to the project and socket directory
+
+### Apache configuration errors
+
+**Problem**: Apache does not start or the site does not load.
+
+**Solutions**:
+
+- Test configuration: `sudo apachectl configtest`
+- Check error log: `sudo tail -f /var/log/apache2/error.log`
+- Ensure required modules are enabled: `sudo a2enmod uwsgi ssl`
+- Verify virtual host and paths in the site configuration
+
+### SSL certificate issues
+
+**Problem**: HTTPS fails or browser reports certificate errors.
+
+**Solutions**:
+
+- Verify certificate file paths in Apache configuration
+- Check certificate validity and expiration
+- Ensure the SSL module is enabled and Apache reloaded
+- For Let's Encrypt, run `sudo certbot renew --dry-run` to test renewal
+
+---
+
+## Data and Analysis Issues
+
+### Dataset not loading on map
+
+**Problem**: A dataset or layer does not appear on the map.
+
+**Solutions**:
+
+- Confirm the dataset exists and is published in GeoServer (for GeoServer layers)
+- Test the WMS URL or layer in a separate client if possible
+- Verify the area of interest is within the data coverage
+- Check the browser console and network tab for failed requests
+
+### Analysis returns no data
+
+**Problem**: Analysis completes but shows no data or empty charts.
+
+**Solutions**:
+
+- Ensure the selected area is within the dataset coverage
+- Check that the date range is valid for the dataset
+- Verify the area geometry is valid
+- Try a different area or dataset to isolate the issue
+
+---

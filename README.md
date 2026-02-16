@@ -15,6 +15,8 @@ pip install -r requirements.txt
 
 ```bash
 mkdocs serve
+mkdocs serve --livereload
+
 ```
 
 The documentation will be available at `http://localhost:8000`

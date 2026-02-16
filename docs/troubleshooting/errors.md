@@ -189,4 +189,3 @@ python manage.py migrate
 
 ---
 
-Next: [Performance Issues](performance.md)

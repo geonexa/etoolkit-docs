@@ -20,7 +20,7 @@ Guide for managing GeoServer integration in EO-Toolkit.
 
 ### User Configuration
 
-Configure GeoServer user in Django settings:
+Set GeoServer credentials in your `.env` file (never commit real credentials):
 
 ```python
 GEOSERVER_USER = 'admin'

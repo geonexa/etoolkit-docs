@@ -37,18 +37,9 @@ Manage user areas:
 Manage GeoServer data:
 
 - **Geo Data Uploads**: Upload and manage spatial data
-- **Bulk Upload**: Trigger bulk data upload
 - **Actions**: Add, edit, delete layers
 
-**Fields**:
-- Name (unique)
-- Description
-- Data Provider
-- Data File (GeoTIFF/Shapefile)
-- Thumbnail
-- Store Type
-- Keywords
-- SLD File
+
 
 ### Custom Apps
 
@@ -57,12 +48,7 @@ Manage custom applications:
 - **Custom Apps**: Add external applications
 - **Actions**: Add, edit, delete apps
 
-**Fields**:
-- Name (unique)
-- Description
-- Link (URL)
-- Thumbnail
-- Keywords
+
 
 ### Task History
 
@@ -93,14 +79,6 @@ Monitor Celery tasks:
 7. Upload SLD (optional)
 8. Click **Save**
 
-### Bulk Upload
-
-1. Prepare data files and JSON metadata
-2. Place files in `/media/geoserver_data/`
-3. Place JSON at `/staticData/geoserver_data.json`
-4. Go to **Geo Data Uploads**
-5. Click **Trigger Bulk Upload** button
-6. Monitor progress in logs
 
 ### Managing Users
 

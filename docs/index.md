@@ -1,26 +1,17 @@
 # EO-Toolkit Documentation
 
-EO-Toolkit is a comprehensive web-based GIS platform that brings together Earth Observation (EO) data, AI-powered analytics, and interactive mapping to support development projects. It empowers users with the tools, data, and insights needed to make informed, location-specific decisions across agriculture, water, climate resilience, and infrastructure planning.
-https://etoolkit.terrawatch.net/
+EO-Toolkit is a web-based Geographic Information System (GIS) platform that integrates Earth Observation data, advanced analytics, and interactive mapping capabilities to support development projects and decision-making processes. This platform empowers users with the tools, datasets, and analytical insights necessary to make informed, location-specific decisions across multiple sectors including agriculture, water resource management, climate resilience, and infrastructure planning. The documentation provided here serves as a complete guide for installing, configuring, deploying, and utilizing EO-Toolkit on a new server environment.
+
+**Live Application**: [https://etoolkit.terrawatch.net/](https://etoolkit.terrawatch.net/)
+
+![EO-Toolkit](assets/etoolkit.png)
 
 
-## EO Toolkit serves as: 
+## EO-Toolkit serves as
 - A Web-based GIS platform showcasing the application of EO technologies across multiple sectors in IsDB projects.  
 - A knowledge hub summarizing past and ongoing EO-based initiatives in agriculture, water management, climate resilience, and infrastructure development. 
 - A resource center offering EO datasets, methodologies, case studies, learning materials, tools, SOPs, and best practices to facilitate the integration of Earth Observation across various stages of the IsDB project lifecycle.
 
-
-
-
-## Documentation Structure
-
-- **[Getting Started](getting-started/installation.md)**: Installation and setup instructions
-- **[User Guide](user-guide/overview.md)**: Comprehensive guide for end users
-- **[Features](features/data-catalog.md)**: Detailed feature documentation
-- **[API Reference](api/overview.md)**: API endpoints and usage
-- **[Administration](administration/admin-panel.md)**: Admin panel and management guides
-- **[Deployment](deployment/overview.md)**: Production deployment instructions
-- **[Troubleshooting](troubleshooting/common-issues.md)**: Common issues and solutions
 
 ## Use Cases
 
