@@ -392,77 +392,16 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#1-apache" class="md-nav__link">
+  <a href="#1-uwsgi" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Apache
+        1. uWSGI
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="1. Apache">
+    <nav class="md-nav" aria-label="1. uWSGI">
       <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#install-and-enable-modules" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Install and enable modules
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#site-configuration" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Site configuration
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#static-and-media" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Static and media
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-uwsgi" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. uWSGI
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="2. uWSGI">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#install" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Install
-      
-    </span>
-  </a>
-  
-</li>
         
           <li class="md-nav__item">
   <a href="#uwsgi-ini" class="md-nav__link">
@@ -492,22 +431,44 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-celery-and-redis" class="md-nav__link">
+  <a href="#2-celery-deployment" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. Celery and Redis
+        2. Celery Deployment
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="3. Celery and Redis">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-restart-the-celery-and-uwsgi-in-development-after-updates" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Restart the celery and uWSGI in development after updates
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-apache" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Apache
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Apache">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#redis" class="md-nav__link">
+  <a href="#site-configuration" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Redis
+        Site configuration
       
     </span>
   </a>
@@ -515,10 +476,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#celery-systemd-service" class="md-nav__link">
+  <a href="#manual-certificates-optional" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Celery systemd service
+        Manual certificates (Optional)
       
     </span>
   </a>
@@ -531,54 +492,26 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-ssl-https" class="md-nav__link">
+  <a href="#5-screen-usage-for-background-jobs" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. SSL (HTTPS)
+        5. Screen Usage (for Background Jobs)
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="4. SSL (HTTPS)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#lets-encrypt-with-certbot" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Let's Encrypt with Certbot
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#manual-certificates" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Manual certificates
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-service-management" class="md-nav__link">
+  <a href="#6-service-management" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5. Service Management
+        6. Service Management
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="5. Service Management">
+    <nav class="md-nav" aria-label="6. Service Management">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -586,17 +519,6 @@
     <span class="md-ellipsis">
       
         Start / stop / restart
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#enable-on-boot" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Enable on boot
       
     </span>
   </a>
@@ -620,21 +542,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#6-logs" class="md-nav__link">
+  <a href="#7-logs" class="md-nav__link">
     <span class="md-ellipsis">
       
-        6. Logs
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#7-troubleshooting" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        7. Troubleshooting
+        7. Logs
       
     </span>
   </a>
@@ -907,77 +818,16 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#1-apache" class="md-nav__link">
+  <a href="#1-uwsgi" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Apache
+        1. uWSGI
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="1. Apache">
+    <nav class="md-nav" aria-label="1. uWSGI">
       <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#install-and-enable-modules" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Install and enable modules
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#site-configuration" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Site configuration
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#static-and-media" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Static and media
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-uwsgi" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. uWSGI
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="2. uWSGI">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#install" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Install
-      
-    </span>
-  </a>
-  
-</li>
         
           <li class="md-nav__item">
   <a href="#uwsgi-ini" class="md-nav__link">
@@ -1007,22 +857,44 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-celery-and-redis" class="md-nav__link">
+  <a href="#2-celery-deployment" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. Celery and Redis
+        2. Celery Deployment
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="3. Celery and Redis">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-restart-the-celery-and-uwsgi-in-development-after-updates" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Restart the celery and uWSGI in development after updates
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-apache" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Apache
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Apache">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#redis" class="md-nav__link">
+  <a href="#site-configuration" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Redis
+        Site configuration
       
     </span>
   </a>
@@ -1030,10 +902,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#celery-systemd-service" class="md-nav__link">
+  <a href="#manual-certificates-optional" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Celery systemd service
+        Manual certificates (Optional)
       
     </span>
   </a>
@@ -1046,54 +918,26 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-ssl-https" class="md-nav__link">
+  <a href="#5-screen-usage-for-background-jobs" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. SSL (HTTPS)
+        5. Screen Usage (for Background Jobs)
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="4. SSL (HTTPS)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#lets-encrypt-with-certbot" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Let's Encrypt with Certbot
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#manual-certificates" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Manual certificates
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-service-management" class="md-nav__link">
+  <a href="#6-service-management" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5. Service Management
+        6. Service Management
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="5. Service Management">
+    <nav class="md-nav" aria-label="6. Service Management">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1101,17 +945,6 @@
     <span class="md-ellipsis">
       
         Start / stop / restart
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#enable-on-boot" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Enable on boot
       
     </span>
   </a>
@@ -1135,21 +968,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#6-logs" class="md-nav__link">
+  <a href="#7-logs" class="md-nav__link">
     <span class="md-ellipsis">
       
-        6. Logs
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#7-troubleshooting" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        7. Troubleshooting
+        7. Logs
       
     </span>
   </a>
@@ -1186,184 +1008,259 @@
 </ul>
 <p>Replace <code>/path/to/etoolkit</code> and <code>etoolkit.terrawatch.net</code> with your paths and domain.</p>
 <hr />
-<h2 id="1-apache">1. Apache</h2>
-<h3 id="install-and-enable-modules">Install and enable modules</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>apache2
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>libapache2-mod-uwsgi
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>sudo<span class="w"> </span>a2enmod<span class="w"> </span>uwsgi
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>sudo<span class="w"> </span>a2enmod<span class="w"> </span>ssl
-</code></pre></div>
-<h3 id="site-configuration">Site configuration</h3>
-<p>Copy and edit the template, then enable the site:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>sudo<span class="w"> </span>cp<span class="w"> </span>etoolkit/template_apache.conf<span class="w"> </span>/etc/apache2/sites-available/etoolkit.conf
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>sudo<span class="w"> </span>nano<span class="w"> </span>/etc/apache2/sites-available/etoolkit.conf
-</code></pre></div>
-<p>Example (HTTP redirect + HTTPS virtual host):</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nt">&lt;VirtualHost</span><span class="w"> </span><span class="s">*:80</span><span class="nt">&gt;</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">    </span><span class="nb">ServerName</span><span class="w"> </span>etoolkit.terrawatch.net
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">    </span><span class="nb">ServerAlias</span><span class="w"> </span>www.etoolkit.terrawatch.net
-<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">    </span><span class="nb">Redirect</span><span class="w"> </span>permanent<span class="w"> </span>/<span class="w"> </span>https://etoolkit.terrawatch.net/
-<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="nt">&lt;/VirtualHost&gt;</span>
-<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>
-<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="nt">&lt;VirtualHost</span><span class="w"> </span><span class="s">*:443</span><span class="nt">&gt;</span>
-<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">    </span><span class="nb">ServerName</span><span class="w"> </span>etoolkit.terrawatch.net
-<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">    </span><span class="nb">ServerAlias</span><span class="w"> </span>www.etoolkit.terrawatch.net
-<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>
-<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="w">    </span><span class="nb">SSLEngine</span><span class="w"> </span><span class="k">on</span>
-<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="w">    </span><span class="nb">SSLCertificateFile</span><span class="w"> </span><span class="sx">/etc/letsencrypt/live/etoolkit.terrawatch.net/fullchain.pem</span>
-<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="w">    </span><span class="nb">SSLCertificateKeyFile</span><span class="w"> </span><span class="sx">/etc/letsencrypt/live/etoolkit.terrawatch.net/privkey.pem</span>
-<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="w">    </span><span class="nb">Include</span><span class="w"> </span><span class="sx">/etc/letsencrypt/options-ssl-apache.conf</span>
-<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>
-<a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="w">    </span><span class="nb">DocumentRoot</span><span class="w"> </span><span class="sx">/path/to/etoolkit</span>
-<a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="w">    </span><span class="nb">Alias</span><span class="w"> </span><span class="sx">/static</span><span class="w"> </span><span class="sx">/path/to/etoolkit/staticfiles</span>
-<a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a><span class="w">    </span><span class="nb">Alias</span><span class="w"> </span><span class="sx">/media</span><span class="w"> </span><span class="sx">/path/to/etoolkit/media</span>
-<a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a>
-<a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a><span class="w">    </span><span class="nt">&lt;Directory</span><span class="w"> </span><span class="s">/path/to/etoolkit/staticfiles</span><span class="nt">&gt;</span>
-<a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a><span class="w">        </span><span class="nb">Require</span><span class="w"> </span><span class="k">all</span><span class="w"> </span>granted
-<a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a><span class="w">    </span><span class="nt">&lt;/Directory&gt;</span>
-<a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a><span class="w">    </span><span class="nt">&lt;Directory</span><span class="w"> </span><span class="s">/path/to/etoolkit/media</span><span class="nt">&gt;</span>
-<a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a><span class="w">        </span><span class="nb">Require</span><span class="w"> </span><span class="k">all</span><span class="w"> </span>granted
-<a id="__codelineno-2-25" name="__codelineno-2-25" href="#__codelineno-2-25"></a><span class="w">    </span><span class="nt">&lt;/Directory&gt;</span>
-<a id="__codelineno-2-26" name="__codelineno-2-26" href="#__codelineno-2-26"></a><span class="w">    </span><span class="nt">&lt;Directory</span><span class="w"> </span><span class="s">/path/to/etoolkit</span><span class="nt">&gt;</span>
-<a id="__codelineno-2-27" name="__codelineno-2-27" href="#__codelineno-2-27"></a><span class="w">        </span><span class="nt">&lt;Files</span><span class="w"> </span><span class="s">wsgi.py</span><span class="nt">&gt;</span>
-<a id="__codelineno-2-28" name="__codelineno-2-28" href="#__codelineno-2-28"></a><span class="w">            </span><span class="nb">Require</span><span class="w"> </span><span class="k">all</span><span class="w"> </span>granted
-<a id="__codelineno-2-29" name="__codelineno-2-29" href="#__codelineno-2-29"></a><span class="w">        </span><span class="nt">&lt;/Files&gt;</span>
-<a id="__codelineno-2-30" name="__codelineno-2-30" href="#__codelineno-2-30"></a><span class="w">    </span><span class="nt">&lt;/Directory&gt;</span>
-<a id="__codelineno-2-31" name="__codelineno-2-31" href="#__codelineno-2-31"></a>
-<a id="__codelineno-2-32" name="__codelineno-2-32" href="#__codelineno-2-32"></a><span class="w">    </span><span class="nb">WSGIDaemonProcess</span><span class="w"> </span>etoolkit<span class="w"> </span>python-home=/path/to/etoolkit/webapp/venv<span class="w"> </span>python-path=/path/to/etoolkit
-<a id="__codelineno-2-33" name="__codelineno-2-33" href="#__codelineno-2-33"></a><span class="w">    </span><span class="nb">WSGIProcessGroup</span><span class="w"> </span>etoolkit
-<a id="__codelineno-2-34" name="__codelineno-2-34" href="#__codelineno-2-34"></a><span class="w">    </span><span class="nb">WSGIScriptAlias</span><span class="w"> </span>/<span class="w"> </span><span class="sx">/path/to/etoolkit/etoolkit/wsgi.py</span>
-<a id="__codelineno-2-35" name="__codelineno-2-35" href="#__codelineno-2-35"></a>
-<a id="__codelineno-2-36" name="__codelineno-2-36" href="#__codelineno-2-36"></a><span class="w">    </span><span class="nb">Header</span><span class="w"> </span>always<span class="w"> </span>set<span class="w"> </span>X-Content-Type-Options<span class="w"> </span><span class="s2">&quot;nosniff&quot;</span>
-<a id="__codelineno-2-37" name="__codelineno-2-37" href="#__codelineno-2-37"></a><span class="w">    </span><span class="nb">Header</span><span class="w"> </span>always<span class="w"> </span>set<span class="w"> </span>X-Frame-Options<span class="w"> </span><span class="s2">&quot;SAMEORIGIN&quot;</span>
-<a id="__codelineno-2-38" name="__codelineno-2-38" href="#__codelineno-2-38"></a><span class="w">    </span><span class="nb">Header</span><span class="w"> </span>always<span class="w"> </span>set<span class="w"> </span>X-XSS-Protection<span class="w"> </span><span class="s2">&quot;1; mode=block&quot;</span>
-<a id="__codelineno-2-39" name="__codelineno-2-39" href="#__codelineno-2-39"></a>
-<a id="__codelineno-2-40" name="__codelineno-2-40" href="#__codelineno-2-40"></a><span class="w">    </span><span class="nb">ErrorLog</span><span class="w"> </span>${APACHE_LOG_DIR}/etoolkit_error.log
-<a id="__codelineno-2-41" name="__codelineno-2-41" href="#__codelineno-2-41"></a><span class="w">    </span><span class="nb">CustomLog</span><span class="w"> </span>${APACHE_LOG_DIR}/etoolkit_access.log<span class="w"> </span>combined
-<a id="__codelineno-2-42" name="__codelineno-2-42" href="#__codelineno-2-42"></a><span class="nt">&lt;/VirtualHost&gt;</span>
-</code></pre></div>
-<p>Enable site and reload:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>sudo<span class="w"> </span>a2ensite<span class="w"> </span>etoolkit.conf
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>sudo<span class="w"> </span>apachectl<span class="w"> </span>configtest
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>reload<span class="w"> </span>apache2
-</code></pre></div>
-<h3 id="static-and-media">Static and media</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nb">cd</span><span class="w"> </span>/path/to/etoolkit
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="nb">source</span><span class="w"> </span>webapp/venv/bin/activate
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>python<span class="w"> </span>manage.py<span class="w"> </span>collectstatic<span class="w"> </span>--noinput
-<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>
-<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>mkdir<span class="w"> </span>-p<span class="w"> </span>/path/to/etoolkit/media
-<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>chmod<span class="w"> </span>-R<span class="w"> </span><span class="m">755</span><span class="w"> </span>/path/to/etoolkit/media
-<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>chown<span class="w"> </span>-R<span class="w"> </span>www-data:www-data<span class="w"> </span>/path/to/etoolkit/media
-</code></pre></div>
-<hr />
-<h2 id="2-uwsgi">2. uWSGI</h2>
-<h3 id="install">Install</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nb">cd</span><span class="w"> </span>/path/to/etoolkit/webapp
-<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="nb">source</span><span class="w"> </span>venv/bin/activate
-<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>pip<span class="w"> </span>install<span class="w"> </span>uwsgi
-</code></pre></div>
+<h2 id="1-uwsgi">1. uWSGI</h2>
 <h3 id="uwsgi-ini">uWSGI INI</h3>
-<p>Create <code>etoolkit/uwsgi.ini</code>:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">[uwsgi]</span>
-<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="na">project</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">etoolkit</span>
-<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="na">base</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">/path/to/etoolkit</span>
-<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>
-<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="na">chdir</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">%(base)</span>
-<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="na">module</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">%(project).wsgi:application</span>
-<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="na">master</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">true</span>
-<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="na">processes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">4</span>
-<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="na">threads</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">2</span>
-<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="na">vacuum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">true</span>
-<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="na">die-on-term</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">true</span>
-<a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a>
-<a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a><span class="na">socket</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">/path/to/etoolkit/etoolkit.sock</span>
-<a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a><span class="na">chmod-socket</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">666</span>
-<a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a><span class="na">uid</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">www-data</span>
-<a id="__codelineno-6-16" name="__codelineno-6-16" href="#__codelineno-6-16"></a><span class="na">gid</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">www-data</span>
-<a id="__codelineno-6-17" name="__codelineno-6-17" href="#__codelineno-6-17"></a>
-<a id="__codelineno-6-18" name="__codelineno-6-18" href="#__codelineno-6-18"></a><span class="na">logto</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">/path/to/etoolkit/log/etoolkit.log</span>
+<p>Edit <code>etoolkit/etoolkit.ini</code>:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">[uwsgi]</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="na">chdir</span><span class="w">           </span><span class="o">=</span><span class="w"> </span><span class="s">/home/ecduser/etoolkit/etoolkit</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="na">module</span><span class="w">          </span><span class="o">=</span><span class="w"> </span><span class="s">etoolkit.wsgi</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="na">home</span><span class="w">            </span><span class="o">=</span><span class="w"> </span><span class="s">/home/ecduser/etoolkit/venv</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="na">env</span><span class="w">             </span><span class="o">=</span><span class="w"> </span><span class="s">DJANGO_SETTINGS_MODULE=etoolkit.settings</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="na">master</span><span class="w">          </span><span class="o">=</span><span class="w"> </span><span class="s">true</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="na">processes</span><span class="w">       </span><span class="o">=</span><span class="w"> </span><span class="s">5</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="na">threads</span><span class="w">         </span><span class="o">=</span><span class="w"> </span><span class="s">2</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="na">socket</span><span class="w">          </span><span class="o">=</span><span class="w"> </span><span class="s">/home/ecduser/etoolkit/etoolkit/etoolkit.sock</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="na">chmod-socket</span><span class="w">    </span><span class="o">=</span><span class="w"> </span><span class="s">660</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="na">chown-socket</span><span class="w">    </span><span class="o">=</span><span class="w"> </span><span class="s">ecduser:ecduser</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="na">vacuum</span><span class="w">          </span><span class="o">=</span><span class="w"> </span><span class="s">true</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="na">daemonize</span><span class="w">       </span><span class="o">=</span><span class="w"> </span><span class="s">/home/ecduser/etoolkit/etoolkit/log/etoolkit.log</span>
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="na">post-buffering</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="s">true</span>
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="na">route-run</span><span class="w">       </span><span class="o">=</span><span class="w"> </span><span class="s">harakiri:180</span>
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="na">pidfile</span><span class="w">         </span><span class="o">=</span><span class="w"> </span><span class="s">/home/ecduser/etoolkit/etoolkit/uwsgi.pid</span>
 </code></pre></div>
 <h3 id="systemd-service">Systemd service</h3>
-<p>Create <code>etoolkit/etoolkit_uwsgi.service</code>:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="k">[Unit]</span>
-<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="na">Description</span><span class="o">=</span><span class="s">uWSGI instance to serve etoolkit</span>
-<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="na">After</span><span class="o">=</span><span class="s">network.target</span>
-<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>
-<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="k">[Service]</span>
-<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="na">User</span><span class="o">=</span><span class="s">www-data</span>
-<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="na">Group</span><span class="o">=</span><span class="s">www-data</span>
-<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="na">WorkingDirectory</span><span class="o">=</span><span class="s">/path/to/etoolkit</span>
-<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="na">Environment</span><span class="o">=</span><span class="s">&quot;PATH=/path/to/etoolkit/webapp/venv/bin&quot;</span>
-<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a><span class="na">ExecStart</span><span class="o">=</span><span class="s">/path/to/etoolkit/webapp/venv/bin/uwsgi --ini /path/to/etoolkit/etoolkit/uwsgi.ini</span>
-<a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a>
-<a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a><span class="k">[Install]</span>
-<a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a><span class="na">WantedBy</span><span class="o">=</span><span class="s">multi-user.target</span>
+<p>Edit <code>etoolkit/etoolkit_uwsgi.service</code>:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">[Unit]</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="na">Description</span><span class="o">=</span><span class="s">uWSGI service for etoolkit app</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="na">After</span><span class="o">=</span><span class="s">network.target</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="k">[Service]</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="c1"># user who owns the project</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="na">User</span><span class="o">=</span><span class="s">ecduser</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="na">Group</span><span class="o">=</span><span class="s">ecduser</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="c1"># project directory</span>
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="na">WorkingDirectory</span><span class="o">=</span><span class="s">/home/ecduser/etoolkit</span>
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="c1"># start uWSGI using the .ini file</span>
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="na">ExecStart</span><span class="o">=</span><span class="s">/home/ecduser/etoolkit/venv/bin/uwsgi --ini /home/ecduser/etoolkit/etoolkit/etoolkit.ini</span>
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="c1"># auto restart if it crashes</span>
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="na">Restart</span><span class="o">=</span><span class="s">always</span>
+<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="na">RestartSec</span><span class="o">=</span><span class="s">5</span>
+<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a>
+<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a><span class="c1"># allow systemd to track uwsgi</span>
+<a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a><span class="na">KillSignal</span><span class="o">=</span><span class="s">SIGQUIT</span>
+<a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a><span class="na">Type</span><span class="o">=</span><span class="s">notify</span>
+<a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a><span class="na">NotifyAccess</span><span class="o">=</span><span class="s">all</span>
+<a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a>
+<a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a><span class="k">[Install]</span>
+<a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a><span class="na">WantedBy</span><span class="o">=</span><span class="s">multi-user.target</span>
+</code></pre></div>
+<p>uWSGI Deployment
+  <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>* copy the systemd configuration file
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>sudo ln -s /home/ecduser/etoolkit/etoolkit/etoolkit_uwsgi.service /etc/systemd/system
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>* Enable + Start uWSGI
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>sudo systemctl daemon-reload
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>sudo systemctl enable etoolkit_uwsgi.service
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>sudo systemctl start etoolkit_uwsgi.service
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>sudo systemctl status etoolkit_uwsgi.service
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>* Restart Service
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>sudo systemctl restart etoolkit_uwsgi.service
+</code></pre></div></p>
+<h2 id="2-celery-deployment">2. Celery Deployment</h2>
+<p>Edit <code>etoolkit/etoolkit_celery.service</code> :</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">[Unit]</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="na">Description</span><span class="o">=</span><span class="s">Celery Service for etoolkit app</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="na">After</span><span class="o">=</span><span class="s">network.target</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="k">[Service]</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="na">Type</span><span class="o">=</span><span class="s">forking</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="na">User</span><span class="o">=</span><span class="s">ecduser</span>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="na">Group</span><span class="o">=</span><span class="s">ecduser</span>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="na">EnvironmentFile</span><span class="o">=</span><span class="s">/home/ecduser/etoolkit/etoolkit/celery.conf</span>
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="na">WorkingDirectory</span><span class="o">=</span><span class="s">/home/ecduser/etoolkit/etoolkit/</span>
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="na">ExecStart</span><span class="o">=</span><span class="s">/bin/sh -c &#39;${CELERY_BIN} -A ${CELERY_APP} multi start ${CELERYD_NODES} </span>\
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="w">    </span><span class="s">--pidfile=${CELERYD_PID_FILE} --logfile=${CELERYD_LOG_FILE} </span>\
+<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="w">    </span><span class="s">--loglevel=${CELERYD_LOG_LEVEL} ${CELERYD_OPTS}&#39;</span>
+<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="na">ExecStop</span><span class="o">=</span><span class="s">/bin/sh -c &#39;${CELERY_BIN} multi stopwait ${CELERYD_NODES} </span>\
+<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="w">    </span><span class="s">--pidfile=${CELERYD_PID_FILE} --loglevel=${CELERYD_LOG_LEVEL}&#39;</span>
+<a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a><span class="na">ExecReload</span><span class="o">=</span><span class="s">/bin/sh -c &#39;${CELERY_BIN} -A ${CELERY_APP} multi restart ${CELERYD_NODES} </span>\
+<a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a><span class="w">    </span><span class="s">--pidfile=${CELERYD_PID_FILE} --logfile=${CELERYD_LOG_FILE} </span>\
+<a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a><span class="w">    </span><span class="s">--loglevel=${CELERYD_LOG_LEVEL} ${CELERYD_OPTS}&#39;</span>
+<a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a><span class="na">Restart</span><span class="o">=</span><span class="s">always</span>
+<a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a>
+<a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a><span class="k">[Install]</span>
+<a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a><span class="na">WantedBy</span><span class="o">=</span><span class="s">multi-user.target</span>
 </code></pre></div>
 <p>Enable and start:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>mkdir<span class="w"> </span>-p<span class="w"> </span>/path/to/etoolkit/log
-<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>sudo<span class="w"> </span>chown<span class="w"> </span>www-data:www-data<span class="w"> </span>/path/to/etoolkit/etoolkit<span class="w"> </span>/path/to/etoolkit/log
-<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>sudo<span class="w"> </span>ln<span class="w"> </span>-s<span class="w"> </span>/path/to/etoolkit/etoolkit/etoolkit_uwsgi.service<span class="w"> </span>/etc/systemd/system/
-<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>daemon-reload
-<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>etoolkit_uwsgi.service
-<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>start<span class="w"> </span>etoolkit_uwsgi.service
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>  * Create all the stuff needed to run celery in deployment mode
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>  * create the pid directory
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>  sudo mkdir /var/run/celery/
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>  sudo chown -R ecduser:ecduser /var/run/celery/
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>  * copy the systemd configuration file
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>  sudo ln -s /home/ecduser/etoolkit/etoolkit/etoolkit_celery.service /etc/systemd/system
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>  &lt;!-- EnvironmentFile=-/home/ecduser/etoolkit/etoolkit/celery.conf --&gt;
+<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a>  &lt;!-- WorkingDirectory=/home/ecduser/etoolkit/etoolkit/ --&gt;
+<a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a>
+<a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a>  * modify the environment file if needed (for example the timeout for a single job set to 3000 seconds or number of concurrency set to 8)
+<a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a>
+<a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a>  * reload the systemd files (this has been done everytime etoolkit_celery.service is changed)
+<a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a>  sudo systemctl daemon-reload
+<a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a>
+<a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a>  * enable the service to be automatically start on boot
+<a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a>  sudo systemctl enable etoolkit_celery.service
+<a id="__codelineno-4-20" name="__codelineno-4-20" href="#__codelineno-4-20"></a>
+<a id="__codelineno-4-21" name="__codelineno-4-21" href="#__codelineno-4-21"></a>  * Start the celery app
+<a id="__codelineno-4-22" name="__codelineno-4-22" href="#__codelineno-4-22"></a>  sudo systemctl start etoolkit_celery.service
+<a id="__codelineno-4-23" name="__codelineno-4-23" href="#__codelineno-4-23"></a>
+<a id="__codelineno-4-24" name="__codelineno-4-24" href="#__codelineno-4-24"></a>  * to look if everything is working properly you can
+<a id="__codelineno-4-25" name="__codelineno-4-25" href="#__codelineno-4-25"></a>  sudo systemctl status etoolkit_celery.service
+<a id="__codelineno-4-26" name="__codelineno-4-26" href="#__codelineno-4-26"></a>
+<a id="__codelineno-4-27" name="__codelineno-4-27" href="#__codelineno-4-27"></a>  ls -lh /home/etoolkit/etoolkit/log/celery/
+<a id="__codelineno-4-28" name="__codelineno-4-28" href="#__codelineno-4-28"></a>  &lt;!-- ls -lh /home/ecduser/etoolkit/etoolkit/log/celery/ --&gt;
+<a id="__codelineno-4-29" name="__codelineno-4-29" href="#__codelineno-4-29"></a>
+<a id="__codelineno-4-30" name="__codelineno-4-30" href="#__codelineno-4-30"></a>  tail -f /home/etoolkit/etoolkit/log/celery/worker1.log
+<a id="__codelineno-4-31" name="__codelineno-4-31" href="#__codelineno-4-31"></a>  &lt;!-- tail -f /home/ecduser/etoolkit/etoolkit/log/celery/worker1.log --&gt;
+</code></pre></div>
+<h2 id="3-restart-the-celery-and-uwsgi-in-development-after-updates">3. Restart the celery and uWSGI in development after updates</h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>*<span class="w"> </span>Reload<span class="w"> </span>the<span class="w"> </span>systemd<span class="w"> </span>files<span class="w"> </span><span class="o">(</span>this<span class="w"> </span>has<span class="w"> </span>been<span class="w"> </span><span class="k">done</span><span class="w"> </span>everytime<span class="w"> </span>etoolkit_celery.service<span class="w"> </span>is<span class="w"> </span>changed<span class="o">)</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>daemon-reload
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>*<span class="w"> </span>Restart<span class="w"> </span>Celery<span class="w"> </span>Service
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class="w"> </span>etoolkit_celery.service
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>*<span class="w"> </span>Stop<span class="w"> </span>Celery<span class="w"> </span>Service
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>stop<span class="w"> </span>etoolkit_celery.service
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>*<span class="w"> </span>Start<span class="w"> </span>Celery<span class="w"> </span>Service
+<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>start<span class="w"> </span>etoolkit_celery.service
+<a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a>
+<a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a>*<span class="w"> </span>Verify<span class="w"> </span>Celery<span class="w"> </span>is<span class="w"> </span>Running<span class="w"> </span>Correctly
+<a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>status<span class="w"> </span>etoolkit_celery.service
+<a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a>
+<a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a>
+<a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a>*<span class="w"> </span>Kill<span class="w"> </span>Remaining<span class="w"> </span>Celery<span class="w"> </span>Processes
+<a id="__codelineno-5-18" name="__codelineno-5-18" href="#__codelineno-5-18"></a>sudo<span class="w"> </span>pkill<span class="w"> </span>-9<span class="w"> </span>-f<span class="w"> </span><span class="s1">&#39;celery worker&#39;</span>
+<a id="__codelineno-5-19" name="__codelineno-5-19" href="#__codelineno-5-19"></a>
+<a id="__codelineno-5-20" name="__codelineno-5-20" href="#__codelineno-5-20"></a>*<span class="w"> </span>Ensure<span class="w"> </span>All<span class="w"> </span>Processes<span class="w"> </span>Are<span class="w"> </span>Stopped
+<a id="__codelineno-5-21" name="__codelineno-5-21" href="#__codelineno-5-21"></a>ps<span class="w"> </span>aux<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>celery
+<a id="__codelineno-5-22" name="__codelineno-5-22" href="#__codelineno-5-22"></a>
+<a id="__codelineno-5-23" name="__codelineno-5-23" href="#__codelineno-5-23"></a>
+<a id="__codelineno-5-24" name="__codelineno-5-24" href="#__codelineno-5-24"></a>*<span class="w"> </span>Monitoring<span class="w"> </span>Logs
+<a id="__codelineno-5-25" name="__codelineno-5-25" href="#__codelineno-5-25"></a>tail<span class="w"> </span>-f<span class="w"> </span>/home/ecduser/etoolkit/log/celery/worker1-7.log
+<a id="__codelineno-5-26" name="__codelineno-5-26" href="#__codelineno-5-26"></a>tail<span class="w"> </span>-f<span class="w"> </span>/home/ecduser/etoolkit/log/celery/worker1-6.log
+<a id="__codelineno-5-27" name="__codelineno-5-27" href="#__codelineno-5-27"></a>tail<span class="w"> </span>-f<span class="w"> </span>/home/ecduser/etoolkit/log/celery/worker1.log
+<a id="__codelineno-5-28" name="__codelineno-5-28" href="#__codelineno-5-28"></a>
+<a id="__codelineno-5-29" name="__codelineno-5-29" href="#__codelineno-5-29"></a>
+<a id="__codelineno-5-30" name="__codelineno-5-30" href="#__codelineno-5-30"></a>
+<a id="__codelineno-5-31" name="__codelineno-5-31" href="#__codelineno-5-31"></a><span class="k">for</span><span class="w"> </span>file<span class="w"> </span><span class="k">in</span><span class="w"> </span>/home/ecduser/etoolkit/log/celery/*.log<span class="p">;</span><span class="w"> </span><span class="k">do</span>
+<a id="__codelineno-5-32" name="__codelineno-5-32" href="#__codelineno-5-32"></a><span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Checking </span><span class="nv">$file</span><span class="s2">&quot;</span>
+<a id="__codelineno-5-33" name="__codelineno-5-33" href="#__codelineno-5-33"></a><span class="w">    </span>tail<span class="w"> </span>-n<span class="w"> </span><span class="m">20</span><span class="w"> </span><span class="nv">$file</span>
+<a id="__codelineno-5-34" name="__codelineno-5-34" href="#__codelineno-5-34"></a><span class="k">done</span>
+<a id="__codelineno-5-35" name="__codelineno-5-35" href="#__codelineno-5-35"></a>
+<a id="__codelineno-5-36" name="__codelineno-5-36" href="#__codelineno-5-36"></a>
+<a id="__codelineno-5-37" name="__codelineno-5-37" href="#__codelineno-5-37"></a>*<span class="w"> </span>Restart<span class="w"> </span>uWSGI
+<a id="__codelineno-5-38" name="__codelineno-5-38" href="#__codelineno-5-38"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class="w"> </span>etoolkit_uwsgi
 </code></pre></div>
 <hr />
-<h2 id="3-celery-and-redis">3. Celery and Redis</h2>
-<h3 id="redis">Redis</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>redis-server
-<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>start<span class="w"> </span>redis
-<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>redis
-<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>redis-cli<span class="w"> </span>ping
+<h2 id="4-apache">4. Apache</h2>
+<h3 id="site-configuration">Site configuration</h3>
+<p>Copy and edit the template, then enable the site:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>sudo<span class="w"> </span>cp<span class="w"> </span>etoolkit/template_apache.conf<span class="w"> </span>/etc/apache2/sites-available/etoolkit.conf
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>sudo<span class="w"> </span>nano<span class="w"> </span>/etc/apache2/sites-available/etoolkit.conf
 </code></pre></div>
-<h3 id="celery-systemd-service">Celery systemd service</h3>
-<p>Create PID and log dirs:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>sudo<span class="w"> </span>mkdir<span class="w"> </span>/var/run/celery/
-<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>sudo<span class="w"> </span>chown<span class="w"> </span>-R<span class="w"> </span>etoolkit_user:etoolkit_user<span class="w"> </span>/var/run/celery/
-<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>mkdir<span class="w"> </span>-p<span class="w"> </span>/path/to/etoolkit/log/celery
-<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>chown<span class="w"> </span>-R<span class="w"> </span>etoolkit_user:etoolkit_user<span class="w"> </span>/path/to/etoolkit/log/celery
+<p>Example (etoolkit.conf) (HTTP redirect + HTTPS virtual host):</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="nt">&lt;VirtualHost</span><span class="w"> </span><span class="s">*:80</span><span class="nt">&gt;</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="w">    </span><span class="nb">ServerName</span><span class="w"> </span>etoolkit.terrawatch.net
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="w">    </span><span class="nb">Redirect</span><span class="w"> </span>permanent<span class="w"> </span>/<span class="w"> </span>https://etoolkit.terrawatch.net/
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="nt">&lt;/VirtualHost&gt;</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="nt">&lt;VirtualHost</span><span class="w"> </span><span class="s">*:443</span><span class="nt">&gt;</span>
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="w">    </span><span class="nb">ServerName</span><span class="w"> </span>etoolkit.terrawatch.net
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>
+<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a>
+<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a><span class="w">    </span><span class="nt">&lt;Directory</span><span class="w"> </span><span class="s">/home/ecduser/etoolkit/etoolkit/etoolkit</span><span class="nt">&gt;</span>
+<a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a><span class="w">        </span><span class="nt">&lt;Files</span><span class="w"> </span><span class="s">wsgi.py</span><span class="nt">&gt;</span>
+<a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a><span class="w">            </span><span class="nb">Require</span><span class="w"> </span><span class="k">all</span><span class="w"> </span>granted
+<a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a><span class="w">        </span><span class="nt">&lt;/Files&gt;</span>
+<a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a><span class="w">    </span><span class="nt">&lt;/Directory&gt;</span>
+<a id="__codelineno-7-15" name="__codelineno-7-15" href="#__codelineno-7-15"></a>
+<a id="__codelineno-7-16" name="__codelineno-7-16" href="#__codelineno-7-16"></a><span class="w">    </span><span class="nt">&lt;Location</span><span class="w"> </span><span class="s">/static</span><span class="nt">&gt;</span>
+<a id="__codelineno-7-17" name="__codelineno-7-17" href="#__codelineno-7-17"></a><span class="w">            </span><span class="nb">SetHandler</span><span class="w"> </span><span class="k">none</span>
+<a id="__codelineno-7-18" name="__codelineno-7-18" href="#__codelineno-7-18"></a><span class="w">            </span><span class="nb">Options</span><span class="w"> </span>-Indexes
+<a id="__codelineno-7-19" name="__codelineno-7-19" href="#__codelineno-7-19"></a><span class="w">    </span><span class="nt">&lt;/Location&gt;</span>
+<a id="__codelineno-7-20" name="__codelineno-7-20" href="#__codelineno-7-20"></a>
+<a id="__codelineno-7-21" name="__codelineno-7-21" href="#__codelineno-7-21"></a><span class="w">    </span><span class="nt">&lt;Location</span><span class="w"> </span><span class="s">/media</span><span class="nt">&gt;</span>
+<a id="__codelineno-7-22" name="__codelineno-7-22" href="#__codelineno-7-22"></a><span class="w">            </span><span class="nb">SetHandler</span><span class="w"> </span><span class="k">none</span>
+<a id="__codelineno-7-23" name="__codelineno-7-23" href="#__codelineno-7-23"></a><span class="w">            </span><span class="nb">Options</span><span class="w"> </span>-Indexes
+<a id="__codelineno-7-24" name="__codelineno-7-24" href="#__codelineno-7-24"></a><span class="w">    </span><span class="nt">&lt;/Location&gt;</span>
+<a id="__codelineno-7-25" name="__codelineno-7-25" href="#__codelineno-7-25"></a>
+<a id="__codelineno-7-26" name="__codelineno-7-26" href="#__codelineno-7-26"></a><span class="w">    </span><span class="nb">Alias</span><span class="w"> </span><span class="sx">/media/</span><span class="w"> </span><span class="sx">/home/ecduser/etoolkit/etoolkit/media/</span>
+<a id="__codelineno-7-27" name="__codelineno-7-27" href="#__codelineno-7-27"></a>
+<a id="__codelineno-7-28" name="__codelineno-7-28" href="#__codelineno-7-28"></a><span class="w">    </span><span class="nb">Alias</span><span class="w"> </span><span class="sx">/static/</span><span class="w"> </span><span class="sx">/home/ecduser/etoolkit/etoolkit/static/</span>
+<a id="__codelineno-7-29" name="__codelineno-7-29" href="#__codelineno-7-29"></a>
+<a id="__codelineno-7-30" name="__codelineno-7-30" href="#__codelineno-7-30"></a><span class="w">    </span><span class="nt">&lt;Directory</span><span class="w"> </span><span class="s">/home/ecduser/etoolkit/etoolkit/</span><span class="nt">&gt;</span>
+<a id="__codelineno-7-31" name="__codelineno-7-31" href="#__codelineno-7-31"></a><span class="w">            </span><span class="nb">Require</span><span class="w"> </span><span class="k">all</span><span class="w"> </span>granted
+<a id="__codelineno-7-32" name="__codelineno-7-32" href="#__codelineno-7-32"></a><span class="w">    </span><span class="nt">&lt;/Directory&gt;</span>
+<a id="__codelineno-7-33" name="__codelineno-7-33" href="#__codelineno-7-33"></a>
+<a id="__codelineno-7-34" name="__codelineno-7-34" href="#__codelineno-7-34"></a><span class="w">    </span><span class="nt">&lt;Directory</span><span class="w"> </span><span class="s">/home/ecduser/etoolkit/etoolkit/static</span><span class="nt">&gt;</span>
+<a id="__codelineno-7-35" name="__codelineno-7-35" href="#__codelineno-7-35"></a><span class="w">            </span><span class="nb">Options</span><span class="w"> </span>FollowSymLinks
+<a id="__codelineno-7-36" name="__codelineno-7-36" href="#__codelineno-7-36"></a><span class="w">            </span><span class="nb">Order</span><span class="w"> </span>allow,deny
+<a id="__codelineno-7-37" name="__codelineno-7-37" href="#__codelineno-7-37"></a><span class="w">            </span><span class="nb">Allow</span><span class="w"> </span>from<span class="w"> </span><span class="k">all</span>
+<a id="__codelineno-7-38" name="__codelineno-7-38" href="#__codelineno-7-38"></a><span class="w">    </span><span class="nt">&lt;/Directory&gt;</span>
+<a id="__codelineno-7-39" name="__codelineno-7-39" href="#__codelineno-7-39"></a>
+<a id="__codelineno-7-40" name="__codelineno-7-40" href="#__codelineno-7-40"></a><span class="w">    </span><span class="nt">&lt;Directory</span><span class="w"> </span><span class="s">/home/ecduser/etoolkit/etoolkit/media</span><span class="nt">&gt;</span>
+<a id="__codelineno-7-41" name="__codelineno-7-41" href="#__codelineno-7-41"></a><span class="w">            </span><span class="nb">Options</span><span class="w"> </span>FollowSymLinks
+<a id="__codelineno-7-42" name="__codelineno-7-42" href="#__codelineno-7-42"></a><span class="w">            </span><span class="nb">Order</span><span class="w"> </span>allow,deny
+<a id="__codelineno-7-43" name="__codelineno-7-43" href="#__codelineno-7-43"></a><span class="w">            </span><span class="nb">Allow</span><span class="w"> </span>from<span class="w"> </span><span class="k">all</span>
+<a id="__codelineno-7-44" name="__codelineno-7-44" href="#__codelineno-7-44"></a><span class="w">    </span><span class="nt">&lt;/Directory&gt;</span>
+<a id="__codelineno-7-45" name="__codelineno-7-45" href="#__codelineno-7-45"></a>
+<a id="__codelineno-7-46" name="__codelineno-7-46" href="#__codelineno-7-46"></a><span class="w">    </span><span class="nb">ProxyPass</span><span class="w"> </span>/<span class="w"> </span>http://127.0.0.1:8002/
+<a id="__codelineno-7-47" name="__codelineno-7-47" href="#__codelineno-7-47"></a><span class="w">    </span><span class="nb">ProxyPassReverse</span><span class="w"> </span>/<span class="w"> </span>http://127.0.0.1:8002/
+<a id="__codelineno-7-48" name="__codelineno-7-48" href="#__codelineno-7-48"></a>
+<a id="__codelineno-7-49" name="__codelineno-7-49" href="#__codelineno-7-49"></a><span class="w">    </span><span class="c">#ProxyPass / unix:/home/ecduser/etoolkit/etoolkit/etoolkit.sock|uwsgi://localhost/</span>
+<a id="__codelineno-7-50" name="__codelineno-7-50" href="#__codelineno-7-50"></a><span class="w">    </span><span class="c"># Proxying the connection to uWSGI</span>
+<a id="__codelineno-7-51" name="__codelineno-7-51" href="#__codelineno-7-51"></a>
+<a id="__codelineno-7-52" name="__codelineno-7-52" href="#__codelineno-7-52"></a>
+<a id="__codelineno-7-53" name="__codelineno-7-53" href="#__codelineno-7-53"></a><span class="w">    </span><span class="nb">ErrorLog</span><span class="w"> </span>${APACHE_LOG_DIR}/etoolkit_error.log
+<a id="__codelineno-7-54" name="__codelineno-7-54" href="#__codelineno-7-54"></a><span class="w">    </span><span class="nb">CustomLog</span><span class="w"> </span>${APACHE_LOG_DIR}/etoolkit_access.log<span class="w"> </span>combined
+<a id="__codelineno-7-55" name="__codelineno-7-55" href="#__codelineno-7-55"></a>
+<a id="__codelineno-7-56" name="__codelineno-7-56" href="#__codelineno-7-56"></a>
+<a id="__codelineno-7-57" name="__codelineno-7-57" href="#__codelineno-7-57"></a><span class="nt">&lt;/VirtualHost&gt;</span>
 </code></pre></div>
-<p>Create <code>etoolkit/etoolkit_celery.service</code> (replace <code>etoolkit_user</code> and paths):</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="k">[Unit]</span>
-<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="na">Description</span><span class="o">=</span><span class="s">Celery Service for etoolkit</span>
-<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="na">After</span><span class="o">=</span><span class="s">network.target</span>
-<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>
-<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a><span class="k">[Service]</span>
-<a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a><span class="na">Type</span><span class="o">=</span><span class="s">forking</span>
-<a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a><span class="na">User</span><span class="o">=</span><span class="s">etoolkit_user</span>
-<a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a><span class="na">Group</span><span class="o">=</span><span class="s">etoolkit_user</span>
-<a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a><span class="na">WorkingDirectory</span><span class="o">=</span><span class="s">/path/to/etoolkit</span>
-<a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a><span class="na">ExecStart</span><span class="o">=</span><span class="s">/path/to/etoolkit/webapp/venv/bin/celery multi start worker1 </span>\
-<a id="__codelineno-11-11" name="__codelineno-11-11" href="#__codelineno-11-11"></a><span class="w">    </span><span class="s">-A etoolkit </span>\
-<a id="__codelineno-11-12" name="__codelineno-11-12" href="#__codelineno-11-12"></a><span class="w">    </span><span class="s">--pidfile=/var/run/celery/%n.pid </span>\
-<a id="__codelineno-11-13" name="__codelineno-11-13" href="#__codelineno-11-13"></a><span class="w">    </span><span class="s">--logfile=/path/to/etoolkit/log/celery/%n.log </span>\
-<a id="__codelineno-11-14" name="__codelineno-11-14" href="#__codelineno-11-14"></a><span class="w">    </span><span class="s">--loglevel=INFO </span>\
-<a id="__codelineno-11-15" name="__codelineno-11-15" href="#__codelineno-11-15"></a><span class="w">    </span><span class="s">--concurrency=8 </span>\
-<a id="__codelineno-11-16" name="__codelineno-11-16" href="#__codelineno-11-16"></a><span class="w">    </span><span class="s">--time-limit=3000</span>
-<a id="__codelineno-11-17" name="__codelineno-11-17" href="#__codelineno-11-17"></a><span class="na">ExecStop</span><span class="o">=</span><span class="s">/path/to/etoolkit/webapp/venv/bin/celery multi stopwait worker1 </span>\
-<a id="__codelineno-11-18" name="__codelineno-11-18" href="#__codelineno-11-18"></a><span class="w">    </span><span class="s">--pidfile=/var/run/celery/%n.pid</span>
-<a id="__codelineno-11-19" name="__codelineno-11-19" href="#__codelineno-11-19"></a>
-<a id="__codelineno-11-20" name="__codelineno-11-20" href="#__codelineno-11-20"></a><span class="k">[Install]</span>
-<a id="__codelineno-11-21" name="__codelineno-11-21" href="#__codelineno-11-21"></a><span class="na">WantedBy</span><span class="o">=</span><span class="s">multi-user.target</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>  * Enable uwsgi and ssl module in apache
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>  sudo a2enmod uwsgi
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>  sudo a2enmod ssl
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>  * Enable the virtual host with the following command:**
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>  sudo a2ensite etoolkit.conf
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>
+<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>  * To disable site
+<a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a>  sudo a2dissite etoolkit.conf
+<a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a>
+<a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a>  * Restart the Apache webserver to apply the changes:
+<a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a>  sudo systemctl reload apache2
+<a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a>  sudo systemctl restart apache2
+<a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a>
+<a id="__codelineno-8-15" name="__codelineno-8-15" href="#__codelineno-8-15"></a>  * List all the enabled sites**
+<a id="__codelineno-8-16" name="__codelineno-8-16" href="#__codelineno-8-16"></a>  ls -l /etc/apache2/sites-enabled
+<a id="__codelineno-8-17" name="__codelineno-8-17" href="#__codelineno-8-17"></a>
+<a id="__codelineno-8-18" name="__codelineno-8-18" href="#__codelineno-8-18"></a>  * Test the apache configuration:**
+<a id="__codelineno-8-19" name="__codelineno-8-19" href="#__codelineno-8-19"></a>  sudo apachectl configtest
+<a id="__codelineno-8-20" name="__codelineno-8-20" href="#__codelineno-8-20"></a>
+<a id="__codelineno-8-21" name="__codelineno-8-21" href="#__codelineno-8-21"></a>  * Install certbot in Ubuntu (enable ssl certificate)
+<a id="__codelineno-8-22" name="__codelineno-8-22" href="#__codelineno-8-22"></a>  sudo apt install certbot python3-certbot-apache
+<a id="__codelineno-8-23" name="__codelineno-8-23" href="#__codelineno-8-23"></a>
+<a id="__codelineno-8-24" name="__codelineno-8-24" href="#__codelineno-8-24"></a>  * Set SSL and enable https**
+<a id="__codelineno-8-25" name="__codelineno-8-25" href="#__codelineno-8-25"></a>  sudo certbot --apache -d etoolkit.terrawatch.net
 </code></pre></div>
-<p>Enable and start:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>sudo<span class="w"> </span>ln<span class="w"> </span>-s<span class="w"> </span>/path/to/etoolkit/etoolkit/etoolkit_celery.service<span class="w"> </span>/etc/systemd/system/
-<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>daemon-reload
-<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>etoolkit_celery.service
-<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>start<span class="w"> </span>etoolkit_celery.service
-</code></pre></div>
-<p>Ensure <code>settings.py</code> has Celery broker and result backend (e.g. Redis and django-db).</p>
-<hr />
-<h2 id="4-ssl-https">4. SSL (HTTPS)</h2>
-<h3 id="lets-encrypt-with-certbot">Let's Encrypt with Certbot</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>update
-<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>certbot<span class="w"> </span>python3-certbot-apache
-<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>sudo<span class="w"> </span>certbot<span class="w"> </span>--apache<span class="w"> </span>-d<span class="w"> </span>etoolkit.terrawatch.net<span class="w"> </span>-d<span class="w"> </span>www.etoolkit.terrawatch.net
-</code></pre></div>
-<p>Follow prompts; Certbot configures auto-renewal. Test renewal:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>sudo<span class="w"> </span>certbot<span class="w"> </span>renew<span class="w"> </span>--dry-run
-</code></pre></div>
-<h3 id="manual-certificates">Manual certificates</h3>
+<h3 id="manual-certificates-optional">Manual certificates (Optional)</h3>
 <p>Place certificate and key files, then in your Apache HTTPS virtual host set:</p>
 <ul>
 <li><code>SSLCertificateFile</code> / path to certificate</li>
@@ -1372,34 +1269,45 @@
 </ul>
 <p>Then reload Apache.</p>
 <hr />
-<h2 id="5-service-management">5. Service Management</h2>
-<h3 id="start-stop-restart">Start / stop / restart</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>start<span class="w"> </span>etoolkit_uwsgi<span class="w"> </span>etoolkit_celery<span class="w"> </span>apache2
-<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>stop<span class="w"> </span>etoolkit_uwsgi<span class="w"> </span>etoolkit_celery<span class="w"> </span>apache2
-<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class="w"> </span>etoolkit_uwsgi<span class="w"> </span>etoolkit_celery<span class="w"> </span>apache2
+<h2 id="5-screen-usage-for-background-jobs">5. Screen Usage (for Background Jobs)</h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>* Check the running screen 
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>screen doc: https://linuxize.com/post/how-to-use-linux-screen/
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>screen -r
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>* Start a new screen
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>screen -S etoolkit_server
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>
+<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>* close the current runnign django_server and celery_worker screen
+<a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a>To attach a screen : 
+<a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a>screen -r 392898.etoolkit_server
+<a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a>screen -r 393313.etoolkit_celery
+<a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a>
+<a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a>Then control+ C =
+<a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a>
+<a id="__codelineno-9-15" name="__codelineno-9-15" href="#__codelineno-9-15"></a>* Detach a screen
+<a id="__codelineno-9-16" name="__codelineno-9-16" href="#__codelineno-9-16"></a>screen -d 404581.etoolkit_server
+<a id="__codelineno-9-17" name="__codelineno-9-17" href="#__codelineno-9-17"></a>
+<a id="__codelineno-9-18" name="__codelineno-9-18" href="#__codelineno-9-18"></a>* To delete a screen 
+<a id="__codelineno-9-19" name="__codelineno-9-19" href="#__codelineno-9-19"></a>screen -S 356415.etoolkit_server -X quit
 </code></pre></div>
-<h3 id="enable-on-boot">Enable on boot</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>etoolkit_uwsgi<span class="w"> </span>etoolkit_celery<span class="w"> </span>apache2
+<h2 id="6-service-management">6. Service Management</h2>
+<h3 id="start-stop-restart">Start / stop / restart</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>start<span class="w"> </span>etoolkit_uwsgi<span class="w"> </span>etoolkit_celery<span class="w"> </span>apache2
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>stop<span class="w"> </span>etoolkit_uwsgi<span class="w"> </span>etoolkit_celery<span class="w"> </span>apache2
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class="w"> </span>etoolkit_uwsgi<span class="w"> </span>etoolkit_celery<span class="w"> </span>apache2
 </code></pre></div>
 <h3 id="status">Status</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>status<span class="w"> </span>etoolkit_uwsgi
-<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>status<span class="w"> </span>etoolkit_celery
-<a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>status<span class="w"> </span>apache2
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>status<span class="w"> </span>etoolkit_uwsgi
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>status<span class="w"> </span>etoolkit_celery
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>status<span class="w"> </span>apache2
 </code></pre></div>
 <hr />
-<h2 id="6-logs">6. Logs</h2>
+<h2 id="7-logs">7. Logs</h2>
 <ul>
 <li>Application: <code>tail -f /path/to/etoolkit/log/etoolkit.log</code></li>
 <li>Celery: <code>tail -f /path/to/etoolkit/log/celery/worker1.log</code></li>
 <li>Apache: <code>sudo tail -f /var/log/apache2/etoolkit_error.log</code> and <code>etoolkit_access.log</code></li>
 </ul>
-<hr />
-<h2 id="7-troubleshooting">7. Troubleshooting</h2>
-<p><strong>Permission errors</strong>: Ensure <code>www-data</code> (or your Apache user) can read the project and socket; e.g. <code>sudo chown -R www-data:www-data /path/to/etoolkit</code> and correct permissions on <code>etoolkit.sock</code>.</p>
-<p><strong>uWSGI not starting</strong>: Check paths in <code>uwsgi.ini</code> and the service file; confirm virtualenv path and <code>wsgi.py</code> location.</p>
-<p><strong>Celery not processing</strong>: Verify Redis is running (<code>redis-cli ping</code>), Celery service is up, and broker/backend in <code>settings.py</code> match your Redis URL.</p>
-<p><strong>Apache 502 / no response</strong>: Ensure uWSGI is running and the socket path in Apache matches <code>uwsgi.ini</code>; restart uWSGI and Apache.</p>
-<p><strong>SSL errors</strong>: Confirm certificate paths in Apache, <code>a2enmod ssl</code>, and certificate validity.</p>
 <hr />
 
 
@@ -1423,7 +1331,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="February 16, 2026 22:24:54 UTC">February 16, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="February 16, 2026 23:11:53 UTC">February 16, 2026</span>
   </span>
 
     
