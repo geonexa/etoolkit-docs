@@ -34,7 +34,7 @@ This creates a `site/` directory with static HTML files.
 mkdocs gh-deploy
 ```
 
-This deploys to GitHub Pages (if configured).
+This deploys to GitHub Pages
 
 ## Documentation Structure
 
