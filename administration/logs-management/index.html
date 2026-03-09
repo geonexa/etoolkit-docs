@@ -12,13 +12,13 @@
         <meta name="author" content="EO-Toolkit Team">
       
       
-        <link rel="canonical" href="https://etoolkit.terrawatch.net/troubleshooting/common-issues/">
+        <link rel="canonical" href="https://etoolkit.terrawatch.net/administration/logs-management/">
       
       
-        <link rel="prev" href="../../administration/logs-management/">
+        <link rel="prev" href="../geoserver/">
       
       
-        <link rel="next" href="../errors/">
+        <link rel="next" href="../../troubleshooting/common-issues/">
       
       
         
@@ -29,7 +29,7 @@
     
     
       
-        <title>Common Issues - EO-Toolkit Documentation</title>
+        <title>Logs Management - EO-Toolkit Documentation</title>
       
     
     
@@ -82,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#common-issues-and-solutions" class="md-skip">
+        <a href="#logs-management" class="md-skip">
           Skip to content
         </a>
       
@@ -118,7 +118,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Common Issues
+              Logs Management
             
           </span>
         </div>
@@ -401,18 +401,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
         
           
           <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
@@ -433,7 +435,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             
@@ -451,7 +453,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../administration/admin-panel/" class="md-nav__link">
+      <a href="../admin-panel/" class="md-nav__link">
         
   
   
@@ -479,7 +481,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../administration/geoserver/" class="md-nav__link">
+      <a href="../geoserver/" class="md-nav__link">
         
   
   
@@ -504,90 +506,6 @@
                 
   
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../../administration/logs-management/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Logs Management
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-    
-  
-  
-  
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Troubleshooting
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_8">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Troubleshooting
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
     
   
   
@@ -607,7 +525,7 @@
   <span class="md-ellipsis">
     
   
-    Common Issues
+    Logs Management
   
 
     
@@ -625,7 +543,7 @@
   <span class="md-ellipsis">
     
   
-    Common Issues
+    Logs Management
   
 
     
@@ -651,22 +569,33 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#installation-issues" class="md-nav__link">
+  <a href="#log-locations-overview" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Installation Issues
+        Log locations overview
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Installation Issues">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#application-log-uwsgi-django" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Application log (uWSGI / Django)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Application log (uWSGI / Django)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#database-connection-failed" class="md-nav__link">
+  <a href="#view-in-real-time" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Database connection failed
+        View in real time
       
     </span>
   </a>
@@ -674,10 +603,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#gdal-installation-issues" class="md-nav__link">
+  <a href="#view-last-lines" class="md-nav__link">
     <span class="md-ellipsis">
       
-        GDAL installation issues
+        View last lines
       
     </span>
   </a>
@@ -685,10 +614,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#permission-errors" class="md-nav__link">
+  <a href="#ensure-directory-exists" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Permission errors
+        Ensure directory exists
       
     </span>
   </a>
@@ -701,22 +630,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#runtime-issues" class="md-nav__link">
+  <a href="#celery-logs" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Runtime Issues
+        Celery logs
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Runtime Issues">
+    <nav class="md-nav" aria-label="Celery logs">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#static-files-not-loading" class="md-nav__link">
+  <a href="#view-a-single-worker-in-real-time" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Static files not loading
+        View a single worker in real time
       
     </span>
   </a>
@@ -724,10 +653,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#media-files-not-accessible" class="md-nav__link">
+  <a href="#list-and-tail-all-celery-logs" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Media files not accessible
+        List and tail all Celery logs
       
     </span>
   </a>
@@ -735,10 +664,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#geoserver-connection-failed" class="md-nav__link">
+  <a href="#check-recent-activity-across-workers" class="md-nav__link">
     <span class="md-ellipsis">
       
-        GeoServer connection failed
+        Check recent activity across workers
       
     </span>
   </a>
@@ -751,22 +680,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#user-and-application-issues" class="md-nav__link">
+  <a href="#apache-logs" class="md-nav__link">
     <span class="md-ellipsis">
       
-        User and Application Issues
+        Apache logs
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="User and Application Issues">
+    <nav class="md-nav" aria-label="Apache logs">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#cannot-log-in" class="md-nav__link">
+  <a href="#view-error-log-in-real-time" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Cannot log in
+        View error log in real time
       
     </span>
   </a>
@@ -774,10 +703,21 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#email-verification-not-working" class="md-nav__link">
+  <a href="#view-access-log-in-real-time" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Email verification not working
+        View access log in real time
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#permissions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Permissions
       
     </span>
   </a>
@@ -790,41 +730,13 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#deployment-issues" class="md-nav__link">
+  <a href="#troubleshooting-checklist" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Deployment Issues
+        Troubleshooting checklist
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Deployment Issues">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#uwsgi-not-starting" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        uWSGI not starting
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#apache-configuration-errors" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Apache configuration errors
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -837,6 +749,60 @@
 
               
             
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Troubleshooting
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Troubleshooting
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
               
                 
   
@@ -844,7 +810,35 @@
   
   
     <li class="md-nav__item">
-      <a href="../errors/" class="md-nav__link">
+      <a href="../../troubleshooting/common-issues/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Common Issues
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../troubleshooting/errors/" class="md-nav__link">
         
   
   
@@ -899,22 +893,33 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#installation-issues" class="md-nav__link">
+  <a href="#log-locations-overview" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Installation Issues
+        Log locations overview
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Installation Issues">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#application-log-uwsgi-django" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Application log (uWSGI / Django)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Application log (uWSGI / Django)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#database-connection-failed" class="md-nav__link">
+  <a href="#view-in-real-time" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Database connection failed
+        View in real time
       
     </span>
   </a>
@@ -922,10 +927,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#gdal-installation-issues" class="md-nav__link">
+  <a href="#view-last-lines" class="md-nav__link">
     <span class="md-ellipsis">
       
-        GDAL installation issues
+        View last lines
       
     </span>
   </a>
@@ -933,10 +938,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#permission-errors" class="md-nav__link">
+  <a href="#ensure-directory-exists" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Permission errors
+        Ensure directory exists
       
     </span>
   </a>
@@ -949,22 +954,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#runtime-issues" class="md-nav__link">
+  <a href="#celery-logs" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Runtime Issues
+        Celery logs
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Runtime Issues">
+    <nav class="md-nav" aria-label="Celery logs">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#static-files-not-loading" class="md-nav__link">
+  <a href="#view-a-single-worker-in-real-time" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Static files not loading
+        View a single worker in real time
       
     </span>
   </a>
@@ -972,10 +977,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#media-files-not-accessible" class="md-nav__link">
+  <a href="#list-and-tail-all-celery-logs" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Media files not accessible
+        List and tail all Celery logs
       
     </span>
   </a>
@@ -983,10 +988,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#geoserver-connection-failed" class="md-nav__link">
+  <a href="#check-recent-activity-across-workers" class="md-nav__link">
     <span class="md-ellipsis">
       
-        GeoServer connection failed
+        Check recent activity across workers
       
     </span>
   </a>
@@ -999,22 +1004,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#user-and-application-issues" class="md-nav__link">
+  <a href="#apache-logs" class="md-nav__link">
     <span class="md-ellipsis">
       
-        User and Application Issues
+        Apache logs
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="User and Application Issues">
+    <nav class="md-nav" aria-label="Apache logs">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#cannot-log-in" class="md-nav__link">
+  <a href="#view-error-log-in-real-time" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Cannot log in
+        View error log in real time
       
     </span>
   </a>
@@ -1022,10 +1027,21 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#email-verification-not-working" class="md-nav__link">
+  <a href="#view-access-log-in-real-time" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Email verification not working
+        View access log in real time
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#permissions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Permissions
       
     </span>
   </a>
@@ -1038,41 +1054,13 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#deployment-issues" class="md-nav__link">
+  <a href="#troubleshooting-checklist" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Deployment Issues
+        Troubleshooting checklist
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Deployment Issues">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#uwsgi-not-starting" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        uWSGI not starting
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#apache-configuration-errors" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Apache configuration errors
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1093,106 +1081,123 @@
 
 
 
-<h1 id="common-issues-and-solutions">Common Issues and Solutions</h1>
-<p>This guide covers common issues when installing, running, or using EO-Toolkit and how to resolve them.</p>
-<h2 id="installation-issues">Installation Issues</h2>
-<h3 id="database-connection-failed">Database connection failed</h3>
-<p><strong>Problem</strong>: Cannot connect to PostgreSQL database.</p>
-<p><strong>Solutions</strong>:</p>
+<h1 id="logs-management">Logs Management</h1>
+<p>This page describes where EO-Toolkit writes logs, how to view them, and how they are configured. Use this for debugging, monitoring, and routine operations.</p>
+<p>Replace <code>/path/to/etoolkit</code> with your actual project path (e.g. <code>/home/ecduser/etoolkit</code>).</p>
+<hr />
+<h2 id="log-locations-overview">Log locations overview</h2>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Log path</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Application (uWSGI/Django)</strong></td>
+<td><code>/path/to/etoolkit/etoolkit/log/etoolkit.log</code></td>
+<td>Django app and uWSGI output</td>
+</tr>
+<tr>
+<td><strong>Celery workers</strong></td>
+<td><code>/path/to/etoolkit/etoolkit/log/celery/worker1.log</code> (and worker2, …)</td>
+<td>Async task execution, GEE jobs, reports</td>
+</tr>
+<tr>
+<td><strong>Apache error</strong></td>
+<td><code>/var/log/apache2/etoolkit_error.log</code></td>
+<td>HTTP errors, proxy issues</td>
+</tr>
+<tr>
+<td><strong>Apache access</strong></td>
+<td><code>/var/log/apache2/etoolkit_access.log</code></td>
+<td>HTTP requests (combined format)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="application-log-uwsgi-django">Application log (uWSGI / Django)</h2>
 <ul>
-<li>Verify PostgreSQL is running: <code>sudo systemctl status postgresql</code></li>
-<li>Check database credentials in <code>.env</code> (POSTGRES_DB, POSTGRES_USER, POSTGRES_PASSWORD, POSTGRES_HOST, POSTGRES_PORT)</li>
-<li>Confirm the database exists: <code>psql -U etoolkit -l</code></li>
-<li>Check PostgreSQL is listening: <code>sudo netstat -tlnp | grep 5432</code></li>
+<li><strong>Path:</strong> <code>etoolkit/etoolkit/log/etoolkit.log</code></li>
+<li><strong>Configured in:</strong> <code>etoolkit/etoolkit.ini</code> → <code>daemonize = .../log/etoolkit.log</code></li>
 </ul>
-<h3 id="gdal-installation-issues">GDAL installation issues</h3>
-<p><strong>Problem</strong>: GDAL-related errors during setup or when loading spatial data.</p>
-<p><strong>Solutions</strong>:</p>
-<ul>
-<li>Verify GDAL is installed: <code>gdalinfo --version</code></li>
-<li>Install development packages: <code>sudo apt-get install gdal-bin libgdal-dev</code></li>
-<li>Reinstall Python GDAL bindings inside your virtualenv if needed</li>
-</ul>
-<h3 id="permission-errors">Permission errors</h3>
-<p><strong>Problem</strong>: Permission denied when running commands or when the web server accesses files.</p>
-<p><strong>Solutions</strong>:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># Fix ownership (replace with your deploy user if different)</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>sudo<span class="w"> </span>chown<span class="w"> </span>-R<span class="w"> </span>www-data:www-data<span class="w"> </span>/path/to/etoolkit
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="c1"># Fix permissions</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>sudo<span class="w"> </span>chmod<span class="w"> </span>-R<span class="w"> </span><span class="m">755</span><span class="w"> </span>/path/to/etoolkit
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="c1"># Media directory</span>
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>sudo<span class="w"> </span>chown<span class="w"> </span>-R<span class="w"> </span>www-data:www-data<span class="w"> </span>/path/to/etoolkit/media
+<h3 id="view-in-real-time">View in real time</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>tail<span class="w"> </span>-f<span class="w"> </span>/path/to/etoolkit/etoolkit/log/etoolkit.log
+</code></pre></div>
+<h3 id="view-last-lines">View last lines</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>tail<span class="w"> </span>-n<span class="w"> </span><span class="m">200</span><span class="w"> </span>/path/to/etoolkit/etoolkit/log/etoolkit.log
+</code></pre></div>
+<h3 id="ensure-directory-exists">Ensure directory exists</h3>
+<p>The log directory is created at install time (see <a href="../../installation/">Installation Guide</a>). If missing:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>mkdir<span class="w"> </span>-p<span class="w"> </span>/path/to/etoolkit/log
 </code></pre></div>
 <hr />
-<h2 id="runtime-issues">Runtime Issues</h2>
-<h3 id="static-files-not-loading">Static files not loading</h3>
-<p><strong>Problem</strong>: CSS or JavaScript files do not load; pages look unstyled.</p>
-<p><strong>Solutions</strong>:</p>
+<h2 id="celery-logs">Celery logs</h2>
 <ul>
-<li>Collect static files: <code>python manage.py collectstatic --noinput</code></li>
-<li>Check STATIC_ROOT and STATIC_URL in settings</li>
-<li>Verify Apache (or your web server) is configured to serve the static directory</li>
-<li>Check file permissions on the static root directory</li>
+<li><strong>Path:</strong> <code>etoolkit/etoolkit/log/celery/worker1.log</code>, <code>worker2.log</code>, … (one per worker)</li>
+<li><strong>Configured in:</strong> Celery systemd service and <code>celery.conf</code> (e.g. <code>CELERYD_LOG_FILE</code>, <code>CELERYD_LOG_DIR</code>)</li>
 </ul>
-<h3 id="media-files-not-accessible">Media files not accessible</h3>
-<p><strong>Problem</strong>: Uploaded files or thumbnails return 404 or permission errors.</p>
-<p><strong>Solutions</strong>:</p>
-<ul>
-<li>Confirm MEDIA_ROOT and MEDIA_URL in settings</li>
-<li>Ensure the media directory exists and has correct permissions</li>
-<li>Check web server configuration for the media alias or path</li>
-<li>In development, ensure <code>DEBUG=True</code> and static/media URLs are included in urlpatterns if needed</li>
-</ul>
-<h3 id="geoserver-connection-failed">GeoServer connection failed</h3>
-<p><strong>Problem</strong>: Cannot connect to GeoServer or layers do not load.</p>
-<p><strong>Solutions</strong>:</p>
-<ul>
-<li>Verify GeoServer is running</li>
-<li>Check GEOSERVER_URL, GEOSERVER_USER, and GEOSERVER_PASSWORD in <code>.env</code></li>
-</ul>
+<h3 id="view-a-single-worker-in-real-time">View a single worker in real time</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>tail<span class="w"> </span>-f<span class="w"> </span>/path/to/etoolkit/etoolkit/log/celery/worker1.log
+</code></pre></div>
+<h3 id="list-and-tail-all-celery-logs">List and tail all Celery logs</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>ls<span class="w"> </span>-lh<span class="w"> </span>/path/to/etoolkit/etoolkit/log/celery/
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="k">for</span><span class="w"> </span>f<span class="w"> </span><span class="k">in</span><span class="w"> </span>/path/to/etoolkit/etoolkit/log/celery/*.log<span class="p">;</span><span class="w"> </span><span class="k">do</span><span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;=== </span><span class="nv">$f</span><span class="s2"> ===&quot;</span><span class="p">;</span><span class="w"> </span>tail<span class="w"> </span>-n<span class="w"> </span><span class="m">20</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$f</span><span class="s2">&quot;</span><span class="p">;</span><span class="w"> </span><span class="k">done</span>
+</code></pre></div>
+<h3 id="check-recent-activity-across-workers">Check recent activity across workers</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>tail<span class="w"> </span>-n<span class="w"> </span><span class="m">50</span><span class="w"> </span>/path/to/etoolkit/etoolkit/log/celery/worker1.log
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>tail<span class="w"> </span>-n<span class="w"> </span><span class="m">50</span><span class="w"> </span>/path/to/etoolkit/etoolkit/log/celery/worker2.log
+</code></pre></div>
+<p>Use these logs when debugging failed or stuck tasks (e.g. GEE analyses, report generation).</p>
 <hr />
-<h2 id="user-and-application-issues">User and Application Issues</h2>
-<h3 id="cannot-log-in">Cannot log in</h3>
-<p><strong>Problem</strong>: Login fails with invalid credentials or similar.</p>
-<p><strong>Solutions</strong>:</p>
+<h2 id="apache-logs">Apache logs</h2>
 <ul>
-<li>Verify username and password</li>
-<li>Ensure the account is active (email verification completed)</li>
-<li>Check for account lockout or rate limiting</li>
-<li>Clear browser cookies and try again</li>
-<li>Use password reset if needed</li>
+<li><strong>Error log:</strong> <code>/var/log/apache2/etoolkit_error.log</code></li>
+<li><strong>Access log:</strong> <code>/var/log/apache2/etoolkit_access.log</code></li>
+<li><strong>Configured in:</strong> Apache virtual host (e.g. <code>etoolkit.conf</code>) with <code>ErrorLog</code> and <code>CustomLog</code></li>
 </ul>
-<h3 id="email-verification-not-working">Email verification not working</h3>
-<p><strong>Problem</strong>: OTP email not received after registration.</p>
-<p><strong>Solutions</strong>:</p>
-<ul>
-<li>Check spam or junk folder</li>
-<li>Verify email configuration in <code>.env</code> (EMAIL_HOST_USER, EMAIL_HOST_PASSWORD, etc.)</li>
-<li>Check application or mail server logs</li>
-<li>Confirm the email address is correct and try resending OTP</li>
-</ul>
+<h3 id="view-error-log-in-real-time">View error log in real time</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>sudo<span class="w"> </span>tail<span class="w"> </span>-f<span class="w"> </span>/var/log/apache2/etoolkit_error.log
+</code></pre></div>
+<h3 id="view-access-log-in-real-time">View access log in real time</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>sudo<span class="w"> </span>tail<span class="w"> </span>-f<span class="w"> </span>/var/log/apache2/etoolkit_access.log
+</code></pre></div>
+<h3 id="permissions">Permissions</h3>
+<p>Apache runs as <code>www-data</code>; reading these logs usually requires <code>sudo</code> or membership in <code>adm</code>.</p>
 <hr />
-<h2 id="deployment-issues">Deployment Issues</h2>
-<h3 id="uwsgi-not-starting">uWSGI not starting</h3>
-<p><strong>Problem</strong>: uWSGI service fails to start.</p>
-<p><strong>Solutions</strong>:</p>
-<ul>
-<li>Check paths in the uWSGI INI file and systemd unit</li>
-<li>Verify virtual environment path and that <code>wsgi.py</code> exists</li>
-<li>Check log file for the exact error</li>
-<li>Ensure the run user (e.g. www-data) has permission to the project and socket directory</li>
-</ul>
-<h3 id="apache-configuration-errors">Apache configuration errors</h3>
-<p><strong>Problem</strong>: Apache does not start or the site does not load.</p>
-<p><strong>Solutions</strong>:</p>
-<ul>
-<li>Test configuration: <code>sudo apachectl configtest</code></li>
-<li>Check error log: <code>sudo tail -f /var/log/apache2/error.log</code></li>
-<li>Ensure required modules are enabled: <code>sudo a2enmod uwsgi ssl</code></li>
-<li>Verify virtual host and paths in the site configuration</li>
-</ul>
+<h2 id="troubleshooting-checklist">Troubleshooting checklist</h2>
+<table>
+<thead>
+<tr>
+<th>Issue</th>
+<th>Where to look</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>App not responding, 502/503</td>
+<td><code>etoolkit.log</code>, <code>etoolkit_error.log</code></td>
+</tr>
+<tr>
+<td>Login or auth errors</td>
+<td><code>etoolkit.log</code>, mail server logs</td>
+</tr>
+<tr>
+<td>Async task failed or stuck</td>
+<td><code>log/celery/worker*.log</code></td>
+</tr>
+<tr>
+<td>Layer or WMS not loading</td>
+<td>GeoServer logs, <code>etoolkit_error.log</code></td>
+</tr>
+<tr>
+<td>High traffic or slow requests</td>
+<td><code>etoolkit_access.log</code>, <code>etoolkit.log</code></td>
+</tr>
+</tbody>
+</table>
 
 
 
@@ -1215,7 +1220,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="February 16, 2026 23:11:53 UTC">February 16, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="March 9, 2026 07:16:06 UTC">March 9, 2026</span>
   </span>
 
     
@@ -1225,7 +1230,7 @@
     <span class="md-icon" title="Created">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="February 16, 2026 20:14:26 UTC">February 16, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="March 9, 2026 07:16:06 UTC">March 9, 2026</span>
   </span>
 
     
