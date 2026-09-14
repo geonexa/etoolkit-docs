@@ -394,15 +394,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#migration-using-existing-postgresqlpostgis-data-in-a-new-setup" class="md-nav__link">
+  <a href="#migration-using-the-export-package" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Migration: Using existing PostgreSQL/PostGIS data in a new setup
+        Migration using the export package
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Migration: Using existing PostgreSQL/PostGIS data in a new setup">
+    <nav class="md-nav" aria-label="Migration using the export package">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -417,10 +417,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-1-create-database-and-enable-postgis-if-not-already-done" class="md-nav__link">
+  <a href="#step-0-unpack-and-verify-the-package" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 1: Create database and enable PostGIS (if not already done)
+        Step 0: Unpack and verify the package
       
     </span>
   </a>
@@ -428,10 +428,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-2-restore-the-dump" class="md-nav__link">
+  <a href="#step-1-create-database-and-enable-postgis" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 2: Restore the dump
+        Step 1: Create database and enable PostGIS
       
     </span>
   </a>
@@ -439,10 +439,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-3-configure-the-application-to-use-the-restored-database" class="md-nav__link">
+  <a href="#step-2-restore-the-database-dump" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 3: Configure the application to use the restored database
+        Step 2: Restore the database dump
       
     </span>
   </a>
@@ -450,10 +450,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-4-run-migrations-if-needed" class="md-nav__link">
+  <a href="#step-3-restore-the-full-media-folder" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 4: Run migrations (if needed)
+        Step 3: Restore the full media/ folder
       
     </span>
   </a>
@@ -461,10 +461,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-5-collect-static-files-and-verify" class="md-nav__link">
+  <a href="#step-4-configure-env-on-the-new-server" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 5: Collect static files and verify
+        Step 4: Configure .env on the new server
       
     </span>
   </a>
@@ -472,10 +472,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-6-create-a-superuser-if-not-in-the-dump" class="md-nav__link">
+  <a href="#step-5-geoserver-workspace-and-layers" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 6: Create a superuser (if not in the dump)
+        Step 5: GeoServer workspace and layers
       
     </span>
   </a>
@@ -483,10 +483,93 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#summary-migration-checklist" class="md-nav__link">
+  <a href="#step-6-run-migrations-and-collect-static" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Summary: migration checklist
+        Step 6: Run migrations and collect static
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-7-superuser-if-needed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 7: Superuser (if needed)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-8-post-migration-smoke-tests" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 8: Post-migration smoke tests
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 8: Post-migration smoke tests">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#database-and-schema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Database and schema
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#core-data-and-media" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Core data and media
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#application-endpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Application endpoints
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#services" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Services
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#migration-checklist-export-package" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Migration checklist (export package)
       
     </span>
   </a>
@@ -651,6 +734,33 @@
   
   
     <li class="md-nav__item">
+      <a href="../production-migration-checklist/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Migration Checklist
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../using-the-application/" class="md-nav__link">
         
   
@@ -686,10 +796,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
         
           
-          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
             
   
   
@@ -707,8 +817,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -824,10 +934,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
         
           
-          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
             
   
   
@@ -845,8 +955,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_8">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -957,15 +1067,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#migration-using-existing-postgresqlpostgis-data-in-a-new-setup" class="md-nav__link">
+  <a href="#migration-using-the-export-package" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Migration: Using existing PostgreSQL/PostGIS data in a new setup
+        Migration using the export package
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Migration: Using existing PostgreSQL/PostGIS data in a new setup">
+    <nav class="md-nav" aria-label="Migration using the export package">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -980,10 +1090,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-1-create-database-and-enable-postgis-if-not-already-done" class="md-nav__link">
+  <a href="#step-0-unpack-and-verify-the-package" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 1: Create database and enable PostGIS (if not already done)
+        Step 0: Unpack and verify the package
       
     </span>
   </a>
@@ -991,10 +1101,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-2-restore-the-dump" class="md-nav__link">
+  <a href="#step-1-create-database-and-enable-postgis" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 2: Restore the dump
+        Step 1: Create database and enable PostGIS
       
     </span>
   </a>
@@ -1002,10 +1112,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-3-configure-the-application-to-use-the-restored-database" class="md-nav__link">
+  <a href="#step-2-restore-the-database-dump" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 3: Configure the application to use the restored database
+        Step 2: Restore the database dump
       
     </span>
   </a>
@@ -1013,10 +1123,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-4-run-migrations-if-needed" class="md-nav__link">
+  <a href="#step-3-restore-the-full-media-folder" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 4: Run migrations (if needed)
+        Step 3: Restore the full media/ folder
       
     </span>
   </a>
@@ -1024,10 +1134,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-5-collect-static-files-and-verify" class="md-nav__link">
+  <a href="#step-4-configure-env-on-the-new-server" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 5: Collect static files and verify
+        Step 4: Configure .env on the new server
       
     </span>
   </a>
@@ -1035,10 +1145,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-6-create-a-superuser-if-not-in-the-dump" class="md-nav__link">
+  <a href="#step-5-geoserver-workspace-and-layers" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 6: Create a superuser (if not in the dump)
+        Step 5: GeoServer workspace and layers
       
     </span>
   </a>
@@ -1046,10 +1156,93 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#summary-migration-checklist" class="md-nav__link">
+  <a href="#step-6-run-migrations-and-collect-static" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Summary: migration checklist
+        Step 6: Run migrations and collect static
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-7-superuser-if-needed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 7: Superuser (if needed)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-8-post-migration-smoke-tests" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 8: Post-migration smoke tests
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 8: Post-migration smoke tests">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#database-and-schema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Database and schema
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#core-data-and-media" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Core data and media
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#application-endpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Application endpoints
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#services" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Services
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#migration-checklist-export-package" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Migration checklist (export package)
       
     </span>
   </a>
@@ -1190,7 +1383,7 @@
 
 
 <h1 id="data-seeding-and-migration">Data Seeding and Migration</h1>
-<p>This page covers <strong>seeding</strong> (loading initial catalog and GeoServer data from JSON) and <strong>migration</strong> (using an existing PostgreSQL/PostGIS database dump on a new setup).</p>
+<p>This page covers <strong>seeding</strong> (loading initial catalog and GeoServer data from JSON) and <strong>migration</strong> (restoring a developer-provided <strong>export package</strong> on a new server).</p>
 <p>EO-Toolkit uses multiple catalogs: Data Catalog, Case Studies, Training Material, Partners Catalog, and others. Catalog data is provided in JSON under <code>seed/staticData</code>, sourced from curated datasets and updated over time. After database setup, you can populate the application either by <strong>seeding</strong> from these JSON files or by <strong>restoring</strong> a database dump provided by a developer.</p>
 <hr />
 <h2 id="when-to-use-what">When to use what</h2>
@@ -1207,8 +1400,8 @@
 <td>Run <a href="../installation/#step-7-initialize-database">Django migrations</a>, then <a href="#seeding-catalog-data">Seeding catalog data</a> and optionally <a href="#bulk-geoserver-data-seeding">Bulk GeoServer data seeding</a>.</td>
 </tr>
 <tr>
-<td><strong>Developer gave you a DB dump</strong> – existing Postgres/PostGIS data</td>
-<td>Follow <a href="#migration-using-existing-postgresqlpostgis-data-in-a-new-setup">Migration: Using existing PostgreSQL/PostGIS data</a>.</td>
+<td><strong>Migration</strong> – developer gave you an export package (<code>etoolkit_export_YYYYMMDD</code>)</td>
+<td>Follow <a href="#migration-using-the-export-package">Migration using the export package</a>.</td>
 </tr>
 <tr>
 <td><strong>Adding more catalog or GeoServer data</strong></td>
@@ -1217,65 +1410,173 @@
 </tbody>
 </table>
 <hr />
-<h2 id="migration-using-existing-postgresqlpostgis-data-in-a-new-setup">Migration: Using existing PostgreSQL/PostGIS data in a new setup</h2>
+<h2 id="migration-using-the-export-package">Migration using the export package</h2>
 <p>When a developer provides an existing PostgreSQL/PostGIS dump (e.g. from a previous EO-Toolkit instance), you can use it on a <strong>new server</strong> so the new setup starts with that data instead of seeding from JSON.</p>
 <h3 id="prerequisites">Prerequisites</h3>
 <ul>
 <li>New server with PostgreSQL and PostGIS installed (see <a href="../installation/">Installation Guide</a>).</li>
 <li>The dump file from the developer (e.g. <code>etoolkit_dump.sql</code> or <code>etoolkit_dump.dump</code>).</li>
 <li>EO-Toolkit application code and virtualenv set up on the new server; <code>.env</code> not yet pointing at the restored DB (or you will point it in these steps).</li>
+<li>GeoServer reachable; you will create workspace <strong><code>etoolkit</code></strong> (or reuse an empty one)</li>
 </ul>
-<h3 id="step-1-create-database-and-enable-postgis-if-not-already-done">Step 1: Create database and enable PostGIS (if not already done)</h3>
-<p>On the <strong>new</strong> server, create the database and enable PostGIS:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sudo<span class="w"> </span>-u<span class="w"> </span>postgres<span class="w"> </span>createuser<span class="w"> </span>-P<span class="w"> </span>etoolkit
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>createdb<span class="w"> </span>-U<span class="w"> </span>etoolkit<span class="w"> </span>-h<span class="w"> </span>localhost<span class="w"> </span>etoolkit
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>psql<span class="w"> </span>-U<span class="w"> </span>etoolkit<span class="w"> </span>-h<span class="w"> </span>localhost<span class="w"> </span>etoolkit<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;CREATE EXTENSION IF NOT EXISTS postgis;&quot;</span>
+<h3 id="step-0-unpack-and-verify-the-package">Step 0: Unpack and verify the package</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># If you received a single archive:</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>tar<span class="w"> </span>-xzvf<span class="w"> </span>etoolkit_export_YYYYMMDD.tar.gz
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="nb">cd</span><span class="w"> </span>etoolkit_export_YYYYMMDD
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="c1"># Inspect</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>ls<span class="w"> </span>database<span class="w"> </span>media<span class="w"> </span>manifest
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>cat<span class="w"> </span>manifest/README.txt
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>cat<span class="w"> </span>manifest/sizes.txt
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="c1"># Checksums: SHA256SUMS may list absolute paths from the source host.</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="c1"># Re-hash locally and compare to the hash values in SHA256SUMS:</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>sha256sum<span class="w"> </span>database/*.dump<span class="w"> </span>media/*.tar.gz
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>cat<span class="w"> </span>manifest/SHA256SUMS
 </code></pre></div>
-<p>Use the same DB name/user/password you intend to use in <code>.env</code> (e.g. <code>POSTGRES_DB=etoolkit</code>, <code>POSTGRES_USER=etoolkit</code>).</p>
-<h3 id="step-2-restore-the-dump">Step 2: Restore the dump</h3>
-<p><strong>If the developer gave you a plain SQL dump (<code>.sql</code>):</strong></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>psql<span class="w"> </span>-U<span class="w"> </span>etoolkit<span class="w"> </span>-h<span class="w"> </span>localhost<span class="w"> </span>etoolkit<span class="w"> </span>-f<span class="w"> </span>/path/to/etoolkit_dump.sql
+<h3 id="step-1-create-database-and-enable-postgis">Step 1: Create database and enable PostGIS</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>sudo<span class="w"> </span>-u<span class="w"> </span>postgres<span class="w"> </span>createuser<span class="w"> </span>-P<span class="w"> </span>etoolkit
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>createdb<span class="w"> </span>-U<span class="w"> </span>etoolkit<span class="w"> </span>-h<span class="w"> </span>localhost<span class="w"> </span>etoolkit
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>psql<span class="w"> </span>-U<span class="w"> </span>etoolkit<span class="w"> </span>-h<span class="w"> </span>localhost<span class="w"> </span>etoolkit<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;CREATE EXTENSION IF NOT EXISTS postgis;&quot;</span>
 </code></pre></div>
-<p><strong>If the developer gave you a custom-format dump (<code>.dump</code> or <code>.backup</code>):</strong></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>pg_restore<span class="w"> </span>-U<span class="w"> </span>etoolkit<span class="w"> </span>-h<span class="w"> </span>localhost<span class="w"> </span>-d<span class="w"> </span>etoolkit<span class="w"> </span>--no-owner<span class="w"> </span>--no-acl<span class="w"> </span>/path/to/etoolkit_dump.dump
+<p>Use the same DB name/user/password you will set in <code>.env</code>.</p>
+<h3 id="step-2-restore-the-database-dump">Step 2: Restore the database dump</h3>
+<p>Prefer the <strong>custom-format</strong> <code>.dump</code> file:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>pg_restore<span class="w"> </span>-U<span class="w"> </span>etoolkit<span class="w"> </span>-h<span class="w"> </span>localhost<span class="w"> </span>-d<span class="w"> </span>etoolkit<span class="w"> </span>--no-owner<span class="w"> </span>--no-acl<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span>/path/to/etoolkit_export_YYYYMMDD/database/etoolkit_YYYYMMDD.dump
+</code></pre></div>
+<p>Alternatively, plain SQL:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1"># gunzip -k etoolkit_YYYYMMDD.sql.gz   # if you only have .gz</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>psql<span class="w"> </span>-U<span class="w"> </span>etoolkit<span class="w"> </span>-h<span class="w"> </span>localhost<span class="w"> </span>etoolkit<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">  </span>-f<span class="w"> </span>/path/to/etoolkit_export_YYYYMMDD/database/etoolkit_YYYYMMDD.sql
 </code></pre></div>
 <ul>
-<li>Use <code>--no-owner --no-acl</code> to avoid permission errors when the dump was taken from another user/server.</li>
-<li>If you see “already exists” or constraint errors, the dump may have been created with <code>--clean</code>; that’s normal if the DB was empty. You can ignore non-fatal errors or run restore with <code>--clean</code> only if the DB is disposable.</li>
+<li><code>--no-owner --no-acl</code> avoids permission errors from the source server.</li>
+<li>Non-fatal “already exists” warnings can appear; investigate only if restore fails overall.</li>
 </ul>
-<h3 id="step-3-configure-the-application-to-use-the-restored-database">Step 3: Configure the application to use the restored database</h3>
-<p>In your EO-Toolkit <code>.env</code> (or environment), set the DB connection to the <strong>new</strong> server’s database:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>POSTGRES_DB=etoolkit
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>POSTGRES_USER=etoolkit
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>POSTGRES_PASSWORD=your_password
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>POSTGRES_HOST=localhost
-<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>POSTGRES_PORT=5432
+<h3 id="step-3-restore-the-full-media-folder">Step 3: Restore the full <code>media/</code> folder</h3>
+<p>The dump references files under Django <code>MEDIA_ROOT</code> (<code>etoolkit/media/</code>). Unpack the media archive into the project so paths match:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1"># Django dir = directory that contains settings and the media/ folder</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="nb">export</span><span class="w"> </span><span class="nv">DJANGO_DIR</span><span class="o">=</span>/path/to/etoolkit/etoolkit
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>tar<span class="w"> </span>-C<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$DJANGO_DIR</span><span class="s2">&quot;</span><span class="w"> </span>-xzvf<span class="w"> </span>/path/to/etoolkit_export_YYYYMMDD/media/media_YYYYMMDD.tar.gz
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="c1"># Expect:</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="c1">#   $DJANGO_DIR/media/geoserver_data/</span>
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="c1">#   $DJANGO_DIR/media/reports/</span>
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="c1">#   $DJANGO_DIR/media/custom_app/</span>
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>ls<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$DJANGO_DIR</span><span class="s2">/media&quot;</span>
+<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a>du<span class="w"> </span>-sh<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$DJANGO_DIR</span><span class="s2">/media&quot;</span>/*
 </code></pre></div>
-<h3 id="step-4-run-migrations-if-needed">Step 4: Run migrations (if needed)</h3>
-<p>If the dump is from an older codebase, run migrations so the schema matches the current application:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nb">cd</span><span class="w"> </span>/path/to/etoolkit
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="nb">source</span><span class="w"> </span>venv/bin/activate
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>python<span class="w"> </span>manage.py<span class="w"> </span>migrate
+<p>Ensure the application user can read/write:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>chmod<span class="w"> </span>-R<span class="w"> </span>u+rwX<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$DJANGO_DIR</span><span class="s2">/media&quot;</span>
 </code></pre></div>
-<p>If everything is already up to date, this will report “No migrations to apply.”</p>
-<h3 id="step-5-collect-static-files-and-verify">Step 5: Collect static files and verify</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>python<span class="w"> </span>manage.py<span class="w"> </span>collectstatic<span class="w"> </span>--noinput
+<h3 id="step-4-configure-env-on-the-new-server">Step 4: Configure <code>.env</code> on the new server</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>DJANGO_ENV=production
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>POSTGRES_DB=etoolkit
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>POSTGRES_USER=etoolkit
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>POSTGRES_PASSWORD=your_password
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>POSTGRES_HOST=localhost
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>POSTGRES_PORT=5432
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>GEOSERVER_URL=https://your-geoserver-host/geoserver
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>GEOSERVER_WMS_URL=https://your-geoserver-host/geoserver
+<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a>GEOSERVER_USER=admin
+<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a>GEOSERVER_PASSWORD=your_geoserver_password
+<a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a>GEOSERVER_WORKSPACE=etoolkit
 </code></pre></div>
-<p>Then start the app (e.g. via uWSGI) and check in the browser and Django admin that data and users (if included in the dump) work as expected.</p>
-<h3 id="step-6-create-a-superuser-if-not-in-the-dump">Step 6: Create a superuser (if not in the dump)</h3>
-<p>If the restored database has no superuser (or you need a new one):</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>python<span class="w"> </span>manage.py<span class="w"> </span>createsuperuser<span class="w"> </span>--username<span class="w"> </span>admin
-</code></pre></div>
-<p>Set email and password when prompted.</p>
-<h3 id="summary-migration-checklist">Summary: migration checklist</h3>
+<p>Also set <code>OPENAI_API_KEY</code>, <code>EE_KEY</code>, email settings as required. </p>
+<h3 id="step-5-geoserver-workspace-and-layers">Step 5: GeoServer workspace and layers</h3>
+<p>Because the export does <strong>not</strong> include a full shared GeoServer <code>data_dir</code>:</p>
 <ol>
-<li>Create DB and enable PostGIS on the new server.</li>
-<li>Restore the developer’s dump with <code>psql</code> or <code>pg_restore</code>.</li>
-<li>Point <code>.env</code> to the new DB.</li>
-<li>Run <code>python manage.py migrate</code>.</li>
-<li>Run <code>python manage.py collectstatic --noinput</code>.</li>
-<li>Create superuser if needed.</li>
-<li>Start application and verify.</li>
+<li>Install/start GeoServer (or use an existing instance).</li>
+<li>Create workspace <strong><code>etoolkit</code></strong> (empty is fine).</li>
+<li>Point <code>.env</code> at that GeoServer (Step 4).</li>
+<li>Re-publish eToolkit layers from restored <code>media/geoserver_data/</code>:</li>
+</ol>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="nb">cd</span><span class="w"> </span>/path/to/etoolkit
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="nb">source</span><span class="w"> </span>venv/bin/activate
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>python<span class="w"> </span>manage.py<span class="w"> </span>seed<span class="w"> </span>--only<span class="w"> </span>geoserver_data
+</code></pre></div>
+<p>If layer metadata is already in the restored DB, you may re-upload or trigger bulk upload from Django Admin (<strong>Geo Data Uploads</strong>) instead. Files must come from restored <code>media/geoserver_data/</code> — not from other tools’ GeoServer workspaces.</p>
+<h3 id="step-6-run-migrations-and-collect-static">Step 6: Run migrations and collect static</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="nb">cd</span><span class="w"> </span>/path/to/etoolkit
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="nb">source</span><span class="w"> </span>venv/bin/activate
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>python<span class="w"> </span>manage.py<span class="w"> </span>migrate
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>python<span class="w"> </span>manage.py<span class="w"> </span>collectstatic<span class="w"> </span>--noinput
+</code></pre></div>
+<h3 id="step-7-superuser-if-needed">Step 7: Superuser (if needed)</h3>
+<p>The dump usually includes existing users. Create another admin only if required:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>python<span class="w"> </span>manage.py<span class="w"> </span>createsuperuser<span class="w"> </span>--username<span class="w"> </span>admin
+</code></pre></div>
+<h3 id="step-8-post-migration-smoke-tests">Step 8: Post-migration smoke tests</h3>
+<p>Treat any failure as a blocker until investigated.</p>
+<h4 id="database-and-schema">Database and schema</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>python<span class="w"> </span>manage.py<span class="w"> </span>showmigrations
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>python<span class="w"> </span>manage.py<span class="w"> </span>check
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>psql<span class="w"> </span>-U<span class="w"> </span>etoolkit<span class="w"> </span>-h<span class="w"> </span>localhost<span class="w"> </span>etoolkit<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;SELECT PostGIS_Version();&quot;</span>
+</code></pre></div>
+<h4 id="core-data-and-media">Core data and media</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>psql<span class="w"> </span>-U<span class="w"> </span>etoolkit<span class="w"> </span>-h<span class="w"> </span>localhost<span class="w"> </span>etoolkit<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="s2">SELECT (SELECT COUNT(*) FROM django_migrations) AS migrations_applied;</span>
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="s2">&quot;</span>
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>psql<span class="w"> </span>-U<span class="w"> </span>etoolkit<span class="w"> </span>-h<span class="w"> </span>localhost<span class="w"> </span>etoolkit<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;\dt *user*&quot;</span>
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>
+<a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a>ls<span class="w"> </span>/path/to/etoolkit/etoolkit/media/geoserver_data<span class="w"> </span><span class="p">|</span><span class="w"> </span>head
+<a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a>ls<span class="w"> </span>/path/to/etoolkit/etoolkit/media/reports<span class="w"> </span><span class="p">|</span><span class="w"> </span>head
+</code></pre></div>
+<p>Confirm in Django Admin: catalogs, Geo Data Uploads, and that report/media links resolve.</p>
+<h4 id="application-endpoints">Application endpoints</h4>
+<table>
+<thead>
+<tr>
+<th>Check</th>
+<th>Expected</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Home page</td>
+<td>HTTP 200</td>
+</tr>
+<tr>
+<td><code>/admin/</code> login</td>
+<td>Works with a user from the dump (or new superuser)</td>
+</tr>
+<tr>
+<td>Catalog / map pages</td>
+<td>No 500 errors</td>
+</tr>
+<tr>
+<td>WMS / map layer</td>
+<td>Tiles load from GeoServer workspace <code>etoolkit</code></td>
+</tr>
+<tr>
+<td>One analysis/report (if used)</td>
+<td>Celery picks up the task</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>curl<span class="w"> </span>-I<span class="w"> </span>http://127.0.0.1:8000/
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>curl<span class="w"> </span>-I<span class="w"> </span>http://127.0.0.1:8000/admin/
+</code></pre></div>
+<h4 id="services">Services</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>status<span class="w"> </span>etoolkit_uwsgi
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>status<span class="w"> </span>etoolkit_celery
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>status<span class="w"> </span>apache2
+</code></pre></div>
+<p>See <a href="../administration/logs-management/">Logs Management</a> if something fails.</p>
+<h3 id="migration-checklist-export-package">Migration checklist (export package)</h3>
+<ol>
+<li>Verify package (<code>manifest/SHA256SUMS</code>, sizes).</li>
+<li>Create DB + enable PostGIS.</li>
+<li>Restore <code>database/*.dump</code> (or <code>.sql</code>).</li>
+<li>Unpack <code>media/media_*.tar.gz</code> into Django <code>media/</code>.</li>
+<li>Configure <code>.env</code> (DB + GeoServer + API keys).</li>
+<li>Create GeoServer workspace <code>etoolkit</code> and publish layers from <code>media/geoserver_data/</code>.</li>
+<li><code>migrate</code> + <code>collectstatic</code>.</li>
+<li>Superuser if needed.</li>
+<li><a href="#step-8-post-migration-smoke-tests">Post-migration smoke tests</a>.</li>
 </ol>
 <hr />
 <h2 id="seeding-catalog-data">Seeding catalog data</h2>
@@ -1284,10 +1585,10 @@
 <strong>JSON seed files:</strong> <code>etoolkit/webapp/seed/staticData/</code></p>
 <h3 id="key-commands">Key commands</h3>
 <p>Run all registered seeds (recommended after migrations on a fresh DB):</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>python<span class="w"> </span>manage.py<span class="w"> </span>seed
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>python<span class="w"> </span>manage.py<span class="w"> </span>seed
 </code></pre></div>
 <p>Quieter output:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>python<span class="w"> </span>manage.py<span class="w"> </span>seed<span class="w"> </span>--quiet
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>python<span class="w"> </span>manage.py<span class="w"> </span>seed<span class="w"> </span>--quiet
 </code></pre></div>
 <h3 id="run-individual-seeds">Run individual seeds</h3>
 <table>
@@ -1333,21 +1634,21 @@
 </tbody>
 </table>
 <p><strong>Examples:</strong></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>python<span class="w"> </span>manage.py<span class="w"> </span>seed<span class="w"> </span>--only<span class="w"> </span>countries
-<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>python<span class="w"> </span>manage.py<span class="w"> </span>seed<span class="w"> </span>--only<span class="w"> </span>case_studies
-<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>python<span class="w"> </span>manage.py<span class="w"> </span>seed<span class="w"> </span>--only<span class="w"> </span>training_material
-<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>python<span class="w"> </span>manage.py<span class="w"> </span>seed<span class="w"> </span>--only<span class="w"> </span>data_recommendation
-<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>python<span class="w"> </span>manage.py<span class="w"> </span>seed<span class="w"> </span>--only<span class="w"> </span>gee_datasets
-<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>python<span class="w"> </span>manage.py<span class="w"> </span>seed<span class="w"> </span>--only<span class="w"> </span>sops
-<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>python<span class="w"> </span>manage.py<span class="w"> </span>seed<span class="w"> </span>--only<span class="w"> </span>partners
-<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>python<span class="w"> </span>manage.py<span class="w"> </span>seed<span class="w"> </span>--only<span class="w"> </span>geoserver_data
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>python<span class="w"> </span>manage.py<span class="w"> </span>seed<span class="w"> </span>--only<span class="w"> </span>countries
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>python<span class="w"> </span>manage.py<span class="w"> </span>seed<span class="w"> </span>--only<span class="w"> </span>case_studies
+<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a>python<span class="w"> </span>manage.py<span class="w"> </span>seed<span class="w"> </span>--only<span class="w"> </span>training_material
+<a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a>python<span class="w"> </span>manage.py<span class="w"> </span>seed<span class="w"> </span>--only<span class="w"> </span>data_recommendation
+<a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a>python<span class="w"> </span>manage.py<span class="w"> </span>seed<span class="w"> </span>--only<span class="w"> </span>gee_datasets
+<a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a>python<span class="w"> </span>manage.py<span class="w"> </span>seed<span class="w"> </span>--only<span class="w"> </span>sops
+<a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a>python<span class="w"> </span>manage.py<span class="w"> </span>seed<span class="w"> </span>--only<span class="w"> </span>partners
+<a id="__codelineno-16-8" name="__codelineno-16-8" href="#__codelineno-16-8"></a>python<span class="w"> </span>manage.py<span class="w"> </span>seed<span class="w"> </span>--only<span class="w"> </span>geoserver_data
 </code></pre></div>
 <hr />
 <h2 id="bulk-geoserver-data-seeding">Bulk GeoServer data seeding</h2>
 <p>This loads raster/vector datasets and their styling into GeoServer from a structured folder layout and a metadata JSON file.</p>
 <h3 id="1-prepare-data-files">1. Prepare data files</h3>
 <p>Place each dataset under:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>/media/geoserver_data/&lt;folder_name&gt;/
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>/media/geoserver_data/&lt;folder_name&gt;/
 </code></pre></div>
 <p>Per dataset, provide:</p>
 <ul>
@@ -1356,14 +1657,15 @@
 <li><strong>Thumbnail image</strong> – e.g. PNG</li>
 </ul>
 <p><strong>Example:</strong></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>media/geoserver_data/Niger_LULC/
-<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>├── Niger_LULC.tif
-<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>├── Niger_LULC.sld
-<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>├── Niger_LULC.png
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>media/geoserver_data/Niger_LULC/
+<a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>├── Niger_LULC.tif
+<a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a>├── Niger_LULC.sld
+<a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a>├── Niger_LULC.png
 </code></pre></div>
+<p>After a migration, this tree already exists inside the restored <code>media/</code> archive.</p>
 <h3 id="2-bulk-metadata-json">2. Bulk metadata JSON</h3>
 <ul>
-<li>Path (typical): <code>etoolkit/webapp/seed/data/geoserver_data.json</code></li>
+<li>Path (typical): under <code>etoolkit/webapp/seed/</code> (e.g. <code>staticData/</code> or related seed data), including <code>geoserver_data.json</code></li>
 <li>Each entry describes one dataset (name, files, provider, etc.).</li>
 </ul>
 <h3 id="3-what-the-seed-command-does">3. What the seed command does</h3>
@@ -1375,14 +1677,15 @@
 <li>Creates a <code>GeoDataUpload</code> record and uploads data and style to GeoServer</li>
 </ul>
 <h3 id="4-trigger-geoserver-seeding">4. Trigger GeoServer seeding</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>python<span class="w"> </span>manage.py<span class="w"> </span>seed<span class="w"> </span>--only<span class="w"> </span>geoserver_data
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>python<span class="w"> </span>manage.py<span class="w"> </span>seed<span class="w"> </span>--only<span class="w"> </span>geoserver_data
 </code></pre></div>
 <hr />
 <h2 id="quick-reference">Quick reference</h2>
 <ul>
-<li><strong>New install, empty DB:</strong> migrations → <a href="#seeding-catalog-data">Seeding catalog data</a> → <a href="#bulk-geoserver-data-seeding">Bulk GeoServer data seeding</a> (optional).</li>
-<li><strong>New install, developer gave you a DB dump:</strong> <a href="#migration-using-existing-postgresqlpostgis-data-in-a-new-setup">Migration: Using existing PostgreSQL/PostGIS data</a>.</li>
-<li><strong>Only refresh or add catalog/GeoServer data:</strong> use the <a href="#run-individual-seeds">seed commands</a> and/or <a href="#bulk-geoserver-data-seeding">GeoServer seeding</a> as above.</li>
+<li><strong>Fresh install:</strong> migrations → <a href="#seeding-catalog-data">Seeding catalog data</a> → <a href="#bulk-geoserver-data-seeding">Bulk GeoServer data seeding</a> (optional) → smoke checks.</li>
+<li><strong>Migration with export package:</strong> <a href="#migration-using-the-export-package">Migration using the export package</a> → DB restore + media unpack + GeoServer <code>etoolkit</code> workspace + smoke tests.</li>
+<li><strong>Full production runbook (start → go-live):</strong> <a href="../production-migration-checklist/">Production Migration Checklist</a>.</li>
+<li><strong>Refresh catalog/layers only:</strong> <a href="#run-individual-seeds">seed commands</a> / <a href="#bulk-geoserver-data-seeding">GeoServer seeding</a>.</li>
 </ul>
 
 
@@ -1406,7 +1709,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="March 9, 2026 07:16:06 UTC">March 9, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="September 14, 2026 07:03:36 UTC">September 14, 2026</span>
   </span>
 
     
@@ -1416,7 +1719,7 @@
     <span class="md-icon" title="Created">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="March 9, 2026 07:16:06 UTC">March 9, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="September 14, 2026 07:03:36 UTC">September 14, 2026</span>
   </span>
 
     
