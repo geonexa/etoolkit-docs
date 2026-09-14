@@ -14,7 +14,7 @@ This guide walks you through installing, configuring, and getting started with E
 
 ### Operating System
 
-- Ubuntu Server 22.04 (required)
+- Ubuntu Server 24.04 LTS (tested with 24.04.3 LTS)
 
 ### Required Software
 
@@ -26,6 +26,31 @@ This guide walks you through installing, configuring, and getting started with E
 - Apache web server
 - Build-essential (compilers)
 - Python 3 development packages
+
+
+??? "Specific versions (tested)"
+    EO-Toolkit has been tested with the following **system-level versions**:
+
+    | Component | Version |
+    |-----------|---------|
+    | **OS** | Ubuntu 24.04.3 LTS  |
+    | **PostgreSQL** | 16.13 |
+    | **Python** | 3.12.3 |
+    | **GDAL** | 3.11.4 "Eganville" |
+    | **Redis** | 7.0.15 |
+    | **Apache** | 2.4.58 (Ubuntu) |
+
+    To confirm versions on your system:
+
+    ```bash
+    lsb_release -a
+    python3 --version
+    psql --version
+    gdalinfo --version
+    redis-server --version
+    apache2 -v
+    ```
+
 
 ---
 
@@ -166,7 +191,7 @@ GEOSERVER_WORKSPACE=
 
 ### Email configuration
 
-Set `ADMIN_EMAIL`, `EMAIL_HOST_USER`, and `EMAIL_HOST_PASSWORD` in `.env` for OTP and notifications. For Gmail: enable 2-factor authentication, create an app password, and use it in `EMAIL_HOST_PASSWORD`.
+Set `ADMIN_EMAIL`, `EMAIL_HOST_USER`, and `EMAIL_HOST_PASSWORD` in `.env` for OTP and notifications. For Gmail: enable 2-factor authentication, create an [app password](https://myaccount.google.com/apppasswords), and use it in `EMAIL_HOST_PASSWORD`.
 
 ---
 
@@ -179,7 +204,14 @@ python manage.py migrate
 python manage.py collectstatic
 ```
 
-## Step 8: Create Superuser
+## Step 8: Create media and log directories
+
+```bash
+mkdir -p /path/to/etoolkit/media
+mkdir -p /path/to/etoolkit/log
+```
+
+## Step 9: Create Superuser
 
 ```bash
 python manage.py createsuperuser --username admin
@@ -187,7 +219,7 @@ python manage.py createsuperuser --username admin
 
 Set email and password when prompted.
 
-## Step 9: Testing (Development Mode)
+## Step 10: Testing (Development Mode)
 
 Start Celery (in a separate terminal) and the Django server:
 
@@ -206,21 +238,8 @@ python manage.py runserver 0.0.0.0:8002
 
 Open in a browser:
 
-- `http://127.0.0.1:8000/` (or your port)
+- `http://127.0.0.1:8000/` (local PC, or your port)
 - From other devices: `http://server_ip:8002/`
 
 ---
-
-## First Steps: Using the Application
-
-### Accessing the application
-
-1. Open your browser and go to your EO-Toolkit URL (e.g. `http://localhost:8000` or `https://etoolkit.terrawatch.net`).
-
-### Creating your account
-
-1. Click **Sign Up** or go to `/accounts/register/`.
-2. Enter username, email, password, and confirm password, then click **Register**.
-3. On the email verification page, click **Send OTP**, check your email for the 6-digit code, enter it, and click **Verify**.
-4. Go to `/accounts/login/`, enter username and password, and click **Sign In**.
 

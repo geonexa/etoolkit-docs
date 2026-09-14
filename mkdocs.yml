@@ -52,14 +52,21 @@ plugins:
   - git-revision-date-localized:
       enable_creation_date: true
 
+extra_css:
+  - stylesheets/extra.css
+
 nav:
   - Introduction: index.md
   - Technology and Workflow: technology-and-workflow.md
   - Installation Guide: installation.md
+  - Data Seeding and Migration: data-seeding.md
   - Deployment: deployment.md
+  - Migration Checklist: production-migration-checklist.md
+  - Using the Application: using-the-application.md
   - Administration:
     - Admin Panel: administration/admin-panel.md
     - GeoServer Management: administration/geoserver.md
+    - Logs Management: administration/logs-management.md
   
   - Troubleshooting:
     - Common Issues: troubleshooting/common-issues.md

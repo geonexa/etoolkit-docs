@@ -377,4 +377,6 @@ sudo systemctl status apache2
 - Celery: `tail -f /path/to/etoolkit/log/celery/worker1.log`
 - Apache: `sudo tail -f /var/log/apache2/etoolkit_error.log` and `etoolkit_access.log`
 
+For full log paths, configuration, rotation, and troubleshooting, see **[Logs Management](administration/logs-management.md)**.
+
 ---

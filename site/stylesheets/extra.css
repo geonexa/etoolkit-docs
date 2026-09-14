@@ -1,0 +1,16 @@
+/* Larger Mermaid diagrams for readability (Technology and Workflow page) */
+.md-content .mermaid {
+  margin: 1.5em 0;
+}
+.md-content .mermaid svg {
+  max-width: 100%;
+  min-width: min(720px, 100%);
+  height: auto;
+}
+/* Increase font size in Mermaid diagrams for clearer text */
+.md-content .mermaid .nodeLabel,
+.md-content .mermaid .edgeLabel,
+.md-content .mermaid .clusterLabel,
+.md-content .mermaid .label {
+  font-size: 16px !important;
+}

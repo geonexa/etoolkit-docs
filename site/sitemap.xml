@@ -2,34 +2,46 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://etoolkit.terrawatch.net/</loc>
-         <lastmod>2026-02-16</lastmod>
+         <lastmod>2026-03-09</lastmod>
+    </url>
+    <url>
+         <loc>https://etoolkit.terrawatch.net/data-seeding/</loc>
+         <lastmod>2026-03-09</lastmod>
     </url>
     <url>
          <loc>https://etoolkit.terrawatch.net/deployment/</loc>
-         <lastmod>2026-02-16</lastmod>
+         <lastmod>2026-03-09</lastmod>
     </url>
     <url>
          <loc>https://etoolkit.terrawatch.net/installation/</loc>
-         <lastmod>2026-02-16</lastmod>
+         <lastmod>2026-03-09</lastmod>
     </url>
     <url>
          <loc>https://etoolkit.terrawatch.net/technology-and-workflow/</loc>
-         <lastmod>2026-02-16</lastmod>
+         <lastmod>2026-03-09</lastmod>
+    </url>
+    <url>
+         <loc>https://etoolkit.terrawatch.net/using-the-application/</loc>
+         <lastmod>2026-03-09</lastmod>
     </url>
     <url>
          <loc>https://etoolkit.terrawatch.net/administration/admin-panel/</loc>
-         <lastmod>2026-02-16</lastmod>
+         <lastmod>2026-03-09</lastmod>
     </url>
     <url>
          <loc>https://etoolkit.terrawatch.net/administration/geoserver/</loc>
-         <lastmod>2026-02-16</lastmod>
+         <lastmod>2026-03-09</lastmod>
+    </url>
+    <url>
+         <loc>https://etoolkit.terrawatch.net/administration/logs-management/</loc>
+         <lastmod>2026-03-09</lastmod>
     </url>
     <url>
          <loc>https://etoolkit.terrawatch.net/troubleshooting/common-issues/</loc>
-         <lastmod>2026-02-16</lastmod>
+         <lastmod>2026-03-09</lastmod>
     </url>
     <url>
          <loc>https://etoolkit.terrawatch.net/troubleshooting/errors/</loc>
-         <lastmod>2026-02-16</lastmod>
+         <lastmod>2026-03-09</lastmod>
     </url>
 </urlset>

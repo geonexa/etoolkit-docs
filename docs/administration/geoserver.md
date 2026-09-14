@@ -108,12 +108,86 @@ GEOSERVER_PASSWORD = 'your_password'
 - Check workspace exists
 - Review GeoServer logs
 
-### Layer Not Appearing
+## Helper script: TIFF to COG
 
-- Check layer published
-- Verify WMS enabled
-- Test WMS URL directly
-- Check layer visibility
+For efficient web visualization and GeoServer uploads, GeoTIFFs can be converted to **Cloud Optimized GeoTIFF (COG)** format. Use the script below to compress GeoTIFFs into COG format (tiled, DEFLATE-compressed) using GDAL.
+
+### Prerequisites
+
+- **GDAL** installed and available on your `PATH` (e.g. `gdal_translate`).
+- On Ubuntu: `sudo apt-get install gdal-bin`
+
+### How to use
+
+1. **Prepare your folder structure** (same as for bulk upload):
+
+   ```
+   geoserver_data/
+   ├── DatasetName1/
+   │   └── DatasetName1.tif
+   ├── DatasetName2/
+   │   └── DatasetName2.tif
+   ...
+   ```
+
+   Each subfolder name must match the `.tif` filename (e.g. folder `Niger_LULC` with `Niger_LULC.tif`).
+
+2. **Copy the script** from the collapsible block below. Save as `gdal_tiff_to_cog.py`. Set `base_dir` inside the script to your data path (e.g. `"/path/to/etoolkit/media/geoserver_data"` or keep `"geoserver_data"` if running from the directory that contains it).
+
+3. **Run the script:**
+
+   ```bash
+   python gdal_tiff_to_cog.py
+   ```
+
+4. The script will:
+   - Find each `{folder_name}.tif` under `base_dir`
+   - Compress it to COG (tiled, DEFLATE) as `{folder_name}_compressed.tif`
+   - Replace the original file with the compressed one
+
+??? "View script: gdal_tiff_to_cog.py"
+    Copy the script below, save as `gdal_tiff_to_cog.py`, set `base_dir` to your `geoserver_data` path, and run with `python gdal_tiff_to_cog.py`.
+
+    ```python
+    # This script compresses all GeoTIFF files within subfolders
+    # into Cloud Optimized GeoTIFF (COG) format using GDAL. The optimized files are suitable
+    # for efficient web visualization and upload to GeoServer.
+
+    import os
+    import subprocess
+
+    # Path to the main directory containing subfolders
+    base_dir = "geoserver_data"
+
+    # Loop through each subdirectory
+    for folder in os.listdir(base_dir):
+        folder_path = os.path.join(base_dir, folder)
+        if os.path.isdir(folder_path):
+            tif_filename = f"{folder}.tif"
+            tif_path = os.path.join(folder_path, tif_filename)
+
+            if os.path.isfile(tif_path):
+                compressed_path = os.path.join(folder_path, f"{folder}_compressed.tif")
+
+                print(f"Compressing: {tif_path}")
+                cmd = [
+                    "gdal_translate",
+                    "-co", "COMPRESS=DEFLATE",
+                    "-co", "TILED=YES",
+                    "-of", "GTiff",
+                    tif_path,
+                    compressed_path
+                ]
+
+                try:
+                    subprocess.check_call(cmd)
+                    os.replace(compressed_path, tif_path)
+                    print(f"Replaced with compressed: {tif_path}")
+                except subprocess.CalledProcessError as e:
+                    print(f"Compression failed for {tif_path}: {e}")
+            else:
+                print(f"No .tif found: {tif_path}")
+    ```
 
 ## Bulk geoserver data upload
 ```
